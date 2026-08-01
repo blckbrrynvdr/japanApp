@@ -15,7 +15,10 @@ export interface Day {
   city: string;
   startLocation?: string;
   endLocation?: string;
-  schedule: ScheduleItem[];
+  // Legacy schedule kept for backward compatibility. New data may provide `variants` instead.
+  schedule?: ScheduleItem[];
+  // Optional list of alternative plans for the same day (A/B/...)
+  variants?: Variant[];
 }
 
 export interface TripPoint {
@@ -37,6 +40,17 @@ export interface TripPoint {
 }
 
 export type ScheduleItem = TripPoint;
+
+// Variant support: an alternative plan for a Day. Kept optional and additive to preserve
+// backward compatibility. Authoring guidance: prefer explicit ids ("a","b","usj").
+export interface Variant {
+  id: string;
+  label?: string;          // human-friendly label, e.g. "A — USJ"
+  description?: string;    // short description shown in selector or tooltip
+  schedule: TripPoint[];   // schedule for this variant
+  recommended?: boolean;   // hint which variant is recommended
+}
+
 
 export interface Budget {
   totalLimit: number;

@@ -11,7 +11,15 @@
     </div>
   </div>
 
+  <div class="day-variants" *ngIf="variants && variants.length > 0">
+    <label for="variant-select-{{day.date}}">Вариант дня:</label>
+    <select id="variant-select-{{day.date}}" (change)="selectVariant($any($event.target).value || null)">
+      <option value="">(По умолчанию)</option>
+      <option *ngFor="let v of variants" [value]="v.id" [selected]="v.id === selectedVariantId()">{{ v.label || v.id }}</option>
+    </select>
+  </div>
+
   <div class="day-body">
-    <app-schedule-item *ngFor="let item of day.schedule" [item]="item"></app-schedule-item>
+    <app-schedule-item *ngFor="let item of displayedSchedule" [item]="item"></app-schedule-item>
   </div>
 </article>
