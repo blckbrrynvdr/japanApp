@@ -1,0 +1,23 @@
+<section class="shopping-card">
+  <h2>Покупки</h2>
+  <div class="summary">
+    <div>Лимит: {{ shopping.limit | number:'0.0-0' }} ₽</div>
+    <div>Прогноз: {{ totalEstimated | number:'0.0-0' }} ₽</div>
+    <div>Фактические: {{ totalActual | number:'0.0-0' }} ₽</div>
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress" [style.width.%]="progress"></div>
+  </div>
+  <div class="progress-label">Использовано: {{ progress }}%</div>
+
+  <ul>
+    <li *ngFor="let item of shopping.items">
+      <div>
+        <strong>{{ item.name }}</strong>
+        <div class="item-desc">Оценка: {{ item.estimatedPrice | number:'0.0-0' }} ₽, факт: {{ item.actualPrice || 0 | number:'0.0-0' }} ₽</div>
+      </div>
+      <span class="status" [class.done]="item.purchased">{{ item.purchased ? 'Куплено' : 'Не куплено' }}</span>
+    </li>
+  </ul>
+</section>

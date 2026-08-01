@@ -1,0 +1,17 @@
+<div class="schedule-item">
+  <div class="schedule-top">
+    <div class="time">{{ item.time }}</div>
+    <div class="description">{{ item.description }}</div>
+    <button class="details-button" type="button" (click)="toggleDetails()">
+      {{ openDetails() ? 'Скрыть' : 'Подробнее' }}
+    </button>
+  </div>
+
+  <div *ngIf="item.photoUrl" class="photo-block">
+    <img [src]="item.photoUrl" [alt]="item.description" (click)="openPhoto()" />
+  </div>
+
+  <div *ngIf="openDetails()" class="details">
+    <p>{{ item.details || 'Дополнительной информации нет.' }}</p>
+  </div>
+</div>

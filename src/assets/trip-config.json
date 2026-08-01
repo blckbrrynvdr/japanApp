@@ -1,0 +1,392 @@
+{
+  "appContext": "Поездка в Японию, ноябрь 2026",
+  "agentInstructions": "# Инструкции для агентов\n\nИспользуй этот JSON как единственный источник правды для отображения плана поездки.\n\n- days: день поездки с расписанием.\n- budget: бюджетные статьи и лимиты.\n- payments: оплаченные и запланированные платежи.\n- shopping: покупки с лимитом и статусом.\n- souvenirTips: советы по сувенирам.\n- checklist: что нужно проверить и забронировать.\n- links: полезные ссылки.\n\nНе редактируй страницу напрямую — все данные приходят из этого конфига.",
+  "days": [
+    {
+      "date": "10-11-2026",
+      "city": "Москва → Шанхай",
+      "startLocation": "Москва, дом",
+      "endLocation": "Шанхай, аэропорт",
+      "schedule": [
+        {
+          "time": "19:10",
+          "description": "Вылет из Шереметьево",
+          "details": "Пересадка в Шанхае — 5 часов 45 минут. Проверить правила транзита, терминалы и багаж."
+        }
+      ]
+    },
+    {
+      "date": "11-11-2026",
+      "city": "Осака",
+      "startLocation": "Кансай",
+      "endLocation": "Намба",
+      "schedule": [
+        {
+          "time": "18:00",
+          "description": "Прилёт в Кансай",
+          "details": "Переезд в Намбу, заселение в APA Hotel Namba-Ekihigashi и вечерняя прогулка по Дотонбори."
+        },
+        {
+          "time": "20:30",
+          "description": "Вечерняя прогулка",
+          "details": "Дотонбори, Эбису-баси, Шинсайбаси, ужин и знакомство с городом."
+        }
+      ]
+    },
+    {
+      "date": "12-11-2026",
+      "city": "Осака",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "09:00",
+          "description": "Вариант A — USJ",
+          "details": "Universal Studios Japan: основной приоритет — The Wizarding World of Harry Potter. Express Pass не закладывается."
+        },
+        {
+          "time": "09:00",
+          "description": "Вариант B — осакская программа",
+          "details": "Замок Осаки, район Умэда, Umeda Sky Building, Nipponbashi / Den-Den Town, аниме-магазины и вечерний Дотонбори."
+        }
+      ]
+    },
+    {
+      "date": "13-11-2026",
+      "city": "Киото",
+      "startLocation": "Осака",
+      "endLocation": "Киото",
+      "schedule": [
+        {
+          "time": "10:00",
+          "description": "Переезд в Киото",
+          "details": "Заселение в APA Hotel Kyoto-Ekikita, прогулка по Kyoto Station, Higashi-Honganji и вечерний Гион."
+        }
+      ]
+    },
+    {
+      "date": "14-11-2026",
+      "city": "Киото",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "08:30",
+          "description": "Арасияма",
+          "details": "Бамбуковая роща, храм Тэнрю-дзи, мост Тогэцу-кё, прогулка вдоль реки, опционально обезьяний парк."
+        }
+      ]
+    },
+    {
+      "date": "15-11-2026",
+      "city": "Киото",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "09:00",
+          "description": "Фусими Инари и восточный Киото",
+          "details": "Утром Фусими Инари, затем Kiyomizu-dera, Higashiyama, Kodaiji, Yasaka Shrine и район Гион."
+        }
+      ]
+    },
+    {
+      "date": "16-11-2026",
+      "city": "Киото → Нара",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "09:00",
+          "description": "Замок Нидзё и Нара",
+          "details": "Утром замок Нидзё, затем переезд в Нару, парк оленей, Тодай-дзи, Большой Будда и Касуга-тайся."
+        }
+      ]
+    },
+    {
+      "date": "17-11-2026",
+      "city": "Кавагутико",
+      "startLocation": "Киото",
+      "endLocation": "Кавагутико",
+      "schedule": [
+        {
+          "time": "08:00",
+          "description": "Переезд в Кавагутико",
+          "details": "Заселение в отель, прогулка вдоль озера, парк Оиси и вечерний отдых. Большой багаж отправить в Токио заранее."
+        }
+      ]
+    },
+    {
+      "date": "18-11-2026",
+      "city": "Токио",
+      "startLocation": "Кавагутико",
+      "endLocation": "Токио",
+      "schedule": [
+        {
+          "time": "10:00",
+          "description": "Фудзи и переезд в Токио",
+          "details": "Утром проверка видимости Фудзи, велопрогулка по северному берегу, парк Оиси. После обеда переезд в Токио и заселение в APA Hotel Asakusa Tawaramachi Ekimae."
+        }
+      ]
+    },
+    {
+      "date": "19-11-2026",
+      "city": "Токио",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "10:00",
+          "description": "Асакуса и набережная Сумида",
+          "details": "Сэнсо-дзи, Накамисэ, район Асакуса и Imado-jinja."
+        }
+      ]
+    },
+    {
+      "date": "20-11-2026",
+      "city": "Токио",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "10:00",
+          "description": "Музей Ghibli",
+          "details": "Покупка билетов заранее, прогулка по парку Инокасира и району Кичидзёдзи."
+        }
+      ]
+    },
+    {
+      "date": "21-11-2026",
+      "city": "Токио",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "11:00",
+          "description": "Сибуя и Tower Records",
+          "details": "Shibuya Scramble Crossing, Shibuya Sky, Tower Records, Disk Union и Харадзюку."
+        }
+      ]
+    },
+    {
+      "date": "22-11-2026",
+      "city": "Токио",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "10:00",
+          "description": "Акихабара и Ochanomizu",
+          "details": "Radio Kaikan, AmiAmi, Mandarake, Surugaya, Lashinbang, Jungle."
+        }
+      ]
+    },
+    {
+      "date": "23-11-2026",
+      "city": "Токио",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "10:00",
+          "description": "Tokyo Station и Nakano Broadway",
+          "details": "Marunouchi, KITTE, Tokyo Character Street и Nakano Broadway."
+        }
+      ]
+    },
+    {
+      "date": "24-11-2026",
+      "city": "Токио",
+      "startLocation": "Отель",
+      "endLocation": "Отель",
+      "schedule": [
+        {
+          "time": "10:00",
+          "description": "Янака, Ниппори и Одайба",
+          "details": "Янака Ginza, Nippori Textile Town, Odaiba, DiverCity и Rainbow Bridge."
+        }
+      ]
+    },
+    {
+      "date": "25-11-2026",
+      "city": "Токио → Нарита",
+      "startLocation": "Отель",
+      "endLocation": "Нарита",
+      "schedule": [
+        {
+          "time": "12:00",
+          "description": "Переезд в Нариту",
+          "details": "Упаковка, спокойное утро и выезд с запасом 2.5–3 часа. Вылет в 16:55."
+        }
+      ]
+    },
+    {
+      "date": "26-11-2026",
+      "city": "Москва",
+      "startLocation": "Нарита",
+      "endLocation": "Шереметьево",
+      "schedule": [
+        {
+          "time": "07:00",
+          "description": "Прибытие в Москву",
+          "details": "Завершение поездки и возвращение домой."
+        }
+      ]
+    }
+  ],
+  "budget": {
+    "totalLimit": 400000,
+    "items": [
+      {
+        "category": "Авиабилеты",
+        "planned": "147 000",
+        "actual": "147 000",
+        "comment": "Уже куплены"
+      },
+      {
+        "category": "Отели",
+        "planned": "115 600",
+        "actual": "115 600"
+      },
+      {
+        "category": "Питание",
+        "planned": "50 000",
+        "actual": "0"
+      },
+      {
+        "category": "Транспорт",
+        "planned": "30 000",
+        "actual": "0"
+      },
+      {
+        "category": "Входные билеты без USJ",
+        "planned": "15 000",
+        "actual": "0"
+      },
+      {
+        "category": "USJ",
+        "planned": "20 000",
+        "actual": "0",
+        "comment": "Без Express Pass"
+      },
+      {
+        "category": "Доставка багажа",
+        "planned": "6 000",
+        "actual": "0"
+      },
+      {
+        "category": "Покупки и сувениры",
+        "planned": "20 000",
+        "actual": "0"
+      }
+    ]
+  },
+  "payments": [
+    {
+      "description": "Билеты Москва–Осака",
+      "amount": 147000,
+      "status": "paid"
+    },
+    {
+      "description": "Отели в Осаке и Киото",
+      "amount": 115600,
+      "status": "paid"
+    },
+    {
+      "description": "Транспорт по Японии",
+      "amount": 0,
+      "status": "planned"
+    }
+  ],
+  "shopping": {
+    "limit": 55000,
+    "items": [
+      {
+        "name": "Сувенирный нож",
+        "estimatedPrice": 2000,
+        "actualPrice": 0,
+        "purchased": false
+      },
+      {
+        "name": "Тёплое кимоно",
+        "estimatedPrice": 9000,
+        "actualPrice": 0,
+        "purchased": false
+      },
+      {
+        "name": "Винил",
+        "estimatedPrice": 15000,
+        "actualPrice": 0,
+        "purchased": false
+      },
+      {
+        "name": "Косметика",
+        "estimatedPrice": 10000,
+        "actualPrice": 0,
+        "purchased": false
+      }
+    ]
+  },
+  "souvenirTips": [
+    "Акихабара и Nakano Broadway — фигурки и аниме-сувениры.",
+    "Tower Records Shibuya, Disk Union и HMV — винил.",
+    "Nippori Textile Town — пряжа и рукоделие.",
+    "@cosme TOKYO, Matsumoto Kiyoshi и Don Quijote — косметика."
+  ],
+  "checklist": [
+    {
+      "task": "Билеты в музей Ghibli",
+      "done": false
+    },
+    {
+      "task": "Билеты в USJ, если выбран вариант с парком",
+      "done": false
+    },
+    {
+      "task": "Проверить Shibuya Sky",
+      "done": false
+    },
+    {
+      "task": "Транспорт Киото → Кавагутико",
+      "done": false
+    },
+    {
+      "task": "Автобус Кавагутико → Токио",
+      "done": false
+    },
+    {
+      "task": "Прокат велосипедов в Кавагутико",
+      "done": false
+    },
+    {
+      "task": "Проверить терминал рейса в Нарите",
+      "done": false
+    },
+    {
+      "task": "Проверить правила транзита в Шанхае и Дохе",
+      "done": false
+    }
+  ],
+  "links": [
+    {
+      "title": "Официальный сайт USJ",
+      "url": "https://www.usj.co.jp/web/en/us"
+    },
+    {
+      "title": "Официальный сайт музея Ghibli",
+      "url": "https://www.ghibli-museum.jp/en/"
+    },
+    {
+      "title": "Shibuya Sky",
+      "url": "https://www.shibuya-scramble-square.com/sky/"
+    },
+    {
+      "title": "Go Tokyo",
+      "url": "https://www.gotokyo.org/en/"
+    },
+    {
+      "title": "Japan Guide",
+      "url": "https://www.japan-guide.com/"
+    }
+  ]
+}

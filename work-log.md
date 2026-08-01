@@ -24,4 +24,14 @@ Work log — журнал разработки
 - Подключена Taiga тема через src/styles.less.
 - Сборка `npm run build` прошла успешно.
 
+Запись 5 — Создание моделей и конфига
+- Созданы файлы src/app/models.ts и src/assets/trip-config.json.
+- Конфиг включает appContext, agentInstructions, days, budget, payments, shopping, souvenirTips, checklist, links.
+- Конфиг основан на содержимом tour-v1.html и примерах данных.
+
+Запись 6 — Реализация ConfigService
+- Создан src/app/services/config.service.ts для загрузки JSON.
+- Добавлен provideHttpClient() в app config.
+- Сборка `npm run build` вновь прошла успешно.
+
 Дальнейшие шаги будут записываться по мере выполнения.

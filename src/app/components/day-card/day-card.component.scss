@@ -1,0 +1,45 @@
+.day-card {
+  border: 1px solid #e4e8ec;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(115, 124, 139, 0.08);
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  background: linear-gradient(90deg, #315d78, #7e4e6a);
+  color: white;
+  align-items: baseline;
+}
+
+.date {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.city {
+  font-size: 1.15rem;
+  margin-top: 4px;
+}
+
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 0.85rem;
+}
+
+.day-body {
+  padding: 18px;
+}

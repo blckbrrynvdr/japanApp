@@ -1,0 +1,33 @@
+.budget-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(115, 124, 139, 0.08);
+}
+
+.budget-card h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #315d78;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 10px;
+  border: 1px solid #e1e6eb;
+  text-align: left;
+}
+
+th {
+  background: #f5f8fb;
+  color: #24353f;
+}
+
+tfoot td {
+  font-weight: 700;
+}

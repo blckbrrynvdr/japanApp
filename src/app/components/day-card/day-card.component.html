@@ -1,0 +1,16 @@
+<article class="day-card">
+  <div class="day-header">
+    <div>
+      <div class="date">{{ day.date }}</div>
+      <div class="city">{{ day.city }}</div>
+    </div>
+    <div class="locations">
+      <span class="pill">старт: {{ day.startLocation || '—' }}</span>
+      <span class="pill">финиш: {{ day.endLocation || '—' }}</span>
+    </div>
+  </div>
+
+  <div class="day-body">
+    <app-schedule-item *ngFor="let item of day.schedule" [item]="item"></app-schedule-item>
+  </div>
+</article>

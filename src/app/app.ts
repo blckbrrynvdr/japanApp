@@ -1,15 +1,34 @@
-import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
-import { TuiButton } from '@taiga-ui/core/components/button';
+import { AsyncPipe, CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { TuiRoot } from '@taiga-ui/core/components/root';
+import { ConfigService } from './services/config.service';
+import { DayCardComponent } from './components/day-card/day-card.component';
+import { BudgetComponent } from './components/budget/budget.component';
+import { PaymentsComponent } from './components/payments/payments.component';
+import { ShoppingComponent } from './components/shopping/shopping.component';
+import { SouvenirTipsComponent } from './components/souvenir-tips/souvenir-tips.component';
+import { ChecklistComponent } from './components/checklist/checklist.component';
+import { LinksComponent } from './components/links/links.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, TuiRoot, TuiButton],
+  imports: [
+    CommonModule,
+    AsyncPipe,
+    TuiRoot,
+    DayCardComponent,
+    BudgetComponent,
+    PaymentsComponent,
+    ShoppingComponent,
+    SouvenirTipsComponent,
+    ChecklistComponent,
+    LinksComponent,
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['./app.scss']
 })
 export class App {
-  protected readonly title = signal('japan-app');
+  private readonly configService = inject(ConfigService);
+  protected readonly config$ = this.configService.getTripConfig();
 }

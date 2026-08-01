@@ -1,0 +1,9 @@
+<section class="checklist-card">
+  <h2>Чеклист бронирований</h2>
+  <ul>
+    <li *ngFor="let item of checklist" [class.done]="item.done">
+      <span class="bullet">{{ item.done ? '✓' : '○' }}</span>
+      {{ item.task }}
+    </li>
+  </ul>
+</section>

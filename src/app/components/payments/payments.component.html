@@ -1,0 +1,10 @@
+<section class="payments-card">
+  <h2>Оплачено / Запланировано</h2>
+  <ul>
+    <li *ngFor="let payment of payments" [class.paid]="payment.status === 'paid'">
+      <span class="description">{{ payment.description }}</span>
+      <span class="amount">{{ payment.amount | number:'0.0-0' }} ₽</span>
+      <span class="status">{{ payment.status === 'paid' ? 'Оплачено' : 'Запланировано' }}</span>
+    </li>
+  </ul>
+</section>

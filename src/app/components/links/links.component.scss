@@ -1,0 +1,32 @@
+.links-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(115, 124, 139, 0.08);
+}
+
+.links-card h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #315d78;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeef2;
+}
+
+a {
+  color: #315d78;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

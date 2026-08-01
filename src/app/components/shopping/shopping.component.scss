@@ -1,0 +1,68 @@
+.shopping-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(115, 124, 139, 0.08);
+}
+
+.shopping-card h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #315d78;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.progress-bar {
+  height: 12px;
+  border-radius: 999px;
+  background: #f0f4f8;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #315d78, #7e4e6a);
+}
+
+.progress-label {
+  font-size: 0.9rem;
+  color: #4f5b62;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eaeef2;
+}
+
+.item-desc {
+  font-size: 0.9rem;
+  color: #54656f;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #315d78;
+  color: #315d78;
+}
+
+.status.done {
+  background: #edf7f1;
+}

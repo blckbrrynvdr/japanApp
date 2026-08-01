@@ -1,0 +1,40 @@
+.payments-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(115, 124, 139, 0.08);
+}
+
+.payments-card h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #315d78;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eaeef2;
+}
+
+li.paid {
+  background: #edf7f1;
+}
+
+.description {
+  color: #24252a;
+}
+
+.amount,
+.status {
+  color: #4f5b62;
+}
