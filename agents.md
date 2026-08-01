@@ -40,6 +40,7 @@
 - `docs/dev-plan.md`
 - `docs/initial-prompt.md`
 - `docs/work-log.md`
+- `docs/agent-conversion-guide.md` — инструкция по конвертации текстового плана в `trip-config.json`
 
 ## Текущий статус
 - Angular проект и Taiga UI настроены.
