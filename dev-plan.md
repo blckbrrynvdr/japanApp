@@ -12,9 +12,9 @@ Dev plan — Japan Trip Planner
 4. Копирование исходного tour-v1.html в reference/tour-v1.html. Выполнено.
 
 Дальнейшие шаги
-5. Создать src/app/models.ts с интерфейсами TripConfig, Day, ScheduleItem, Budget, Payment, Shopping, ChecklistItem, Link.
-6. Создать src/assets/trip-config.json на основе содержимого tour-v1.html.
-7. Реализовать src/app/services/config.service.ts для загрузки конфигурации.
+5. Создать src/app/models.ts с интерфейсами TripConfig, Day, ScheduleItem, Budget, Payment, Shopping, ChecklistItem, Link. Выполнено.
+6. Создать src/assets/trip-config.json на основе содержимого tour-v1.html. Выполнено.
+7. Реализовать src/app/services/config.service.ts для загрузки конфигурации. Выполнено.
 8. Создать standalone-компоненты:
    - DayCardComponent
    - ScheduleItemComponent
@@ -24,7 +24,8 @@ Dev plan — Japan Trip Planner
    - SouvenirTipsComponent
    - ChecklistComponent
    - LinksComponent
-9. Интегрировать данные в AppComponent и заменить заглушку контентом.
+   Выполнено.
+9. Интегрировать данные в AppComponent и заменить заглушку контентом. Выполнено.
 10. Проверить приложение визуально с ng serve и обеспечить чтение данных из JSON.
 11. Инициализировать git remote и подготовить первый коммит/репозиторий.
 

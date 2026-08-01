@@ -1,6 +1,6 @@
 ﻿<tui-root>
-  <div class="app-shell">
-    <header class="hero" *ngIf="config$ | async as config">
+  <div class="app-shell" *ngIf="config$ | async as config">
+    <header class="hero">
       <div class="hero-copy">
         <p class="eyebrow">План поездки</p>
         <h1>{{ config.appContext }}</h1>
@@ -8,7 +8,7 @@
       </div>
     </header>
 
-    <section class="content" *ngIf="config$ | async as config">
+    <section class="content">
       <div class="section-heading">
         <h2>Маршрут</h2>
         <p>Дни путешествия с расписанием, локациями и дополнительными заметками.</p>
