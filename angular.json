@@ -27,11 +27,17 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": [
                           "src/styles.less"
-            ]
+            ],
+            "baseHref": "./"
           },
           "configurations": {
             "production": {

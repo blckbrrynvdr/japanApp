@@ -1,4 +1,4 @@
-Dev plan — Japan Trip Planner
+﻿Dev plan — Japan Trip Planner
 
 Цель
 - Построить Angular-приложение на основе существующего HTML-макета tour-v1.html.
@@ -35,4 +35,15 @@ Dev plan — Japan Trip Planner
 - src/app/services/config.service.ts
 - src/app/components/*
 - reference/tour-v1.html
-- dev-plan.md
+- docs/dev-plan.md
+- docs/initial-prompt.md
+- docs/work-log.md
+- agents.md
+
+Предложения по улучшению
+- Добавить диалоговое окно / lightbox для деталей расписания в ScheduleItemComponent.
+- Поддержать предпросмотр фото в лёгком модальном окне.
+- Усовершенствовать мобильную вёрстку и адаптивные сетки.
+- Разделить бюджет и покупки на отдельные секции с прогресс-барами.
+- Ввести маршрутизацию по дням и быстрый фильтр по статусам.
+- Реализовать в следующем этапе редактирование конфига и бэкап данных.
