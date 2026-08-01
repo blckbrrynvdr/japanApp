@@ -22,6 +22,7 @@ export interface ScheduleItem {
   time: string;
   description: string;
   photoUrl?: string;
+  googleMapsUrl?: string;
   details?: string;
 }
 

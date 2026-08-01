@@ -22,4 +22,10 @@ export class ScheduleItemComponent {
       window.open(this.item.photoUrl, '_blank');
     }
   }
+
+  protected openMap(): void {
+    if (this.item.googleMapsUrl) {
+      window.open(this.item.googleMapsUrl, '_blank');
+    }
+  }
 }

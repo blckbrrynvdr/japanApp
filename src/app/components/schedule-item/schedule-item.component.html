@@ -7,6 +7,11 @@
     </button>
   </div>
 
+  <div class="schedule-actions">
+    <button *ngIf="item.photoUrl" class="action-button" type="button" (click)="openPhoto()">Фото</button>
+    <button *ngIf="item.googleMapsUrl" class="action-button" type="button" (click)="openMap()">На карте</button>
+  </div>
+
   <div *ngIf="item.photoUrl" class="photo-block">
     <img [src]="item.photoUrl" [alt]="item.description" (click)="openPhoto()" />
   </div>
