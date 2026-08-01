@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Япония — маршрут 10–26 ноября 2026</title>
+
+  <style>
+    :root {
+      --ink: #24252a;
+      --muted: #6f737c;
+      --red: #b52b35;
+      --red-dark: #7f1823;
+      --cream: #fffaf2;
+      --paper: #ffffff;
+      --line: #e7ded3;
+      --blue: #315d78;
+      --green: #48745b;
+      --shadow: 0 8px 25px rgba(50, 32, 20, .08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(255,250,242,.93), rgba(255,250,242,.93)),
+        radial-gradient(circle at 20% 10%, #f7dcd5 0 2px, transparent 3px),
+        var(--cream);
+      background-size: auto, 28px 28px, auto;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--red-dark);
+      text-decoration: none;
+      border-bottom: 1px dotted currentColor;
+    }
+
+    a:hover {
+      color: var(--red);
+    }
+
+    .page {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .cover {
+      min-height: 640px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 70px 8%;
+      color: white;
+      background:
+        linear-gradient(115deg, rgba(75, 11, 25, .88), rgba(181, 43, 53, .45)),
+        url("https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+      box-shadow: var(--shadow);
+    }
+
+    .cover-kicker {
+      font-family: Arial, sans-serif;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-size: 13px;
+      opacity: .85;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.15;
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 800px;
+      margin: 18px 0;
+      font-size: clamp(40px, 7vw, 76px);
+      font-weight: 700;
+    }
+
+    .cover p {
+      max-width: 700px;
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+
+    .cover-meta {
+      margin-top: 45px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 30px;
+      background: rgba(255,255,255,.12);
+    }
+
+    main {
+      background: var(--paper);
+      padding: 44px clamp(20px, 5vw, 68px);
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      margin: 0 0 48px;
+    }
+
+    h2 {
+      font-size: 31px;
+      color: var(--red-dark);
+      border-bottom: 2px solid var(--red);
+      padding-bottom: 9px;
+      margin-bottom: 22px;
+    }
+
+    h3 {
+      font-size: 22px;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .lead {
+      font-size: 18px;
+    }
+
+    .note, .warning, .success {
+      padding: 16px 18px;
+      margin: 18px 0;
+      border-left: 5px solid var(--blue);
+      background: #f2f7fa;
+    }
+
+    .warning {
+      border-color: var(--red);
+      background: #fff1f0;
+    }
+
+    .success {
+      border-color: var(--green);
+      background: #eff7f0;
+    }
+
+    .route-table, .budget-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    th {
+      color: white;
+      background: var(--red-dark);
+      text-align: left;
+      font-weight: 700;
+    }
+
+    th, td {
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #fffaf6;
+    }
+
+    .day {
+      border: 1px solid var(--line);
+      margin: 0 0 18px;
+      background: #fffdfa;
+      break-inside: avoid;
+    }
+
+    .day-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: baseline;
+      padding: 14px 17px;
+      color: white;
+      background: linear-gradient(90deg, var(--red-dark), var(--red));
+    }
+
+    .day-header h3 {
+      color: white;
+      margin: 0;
+      font-size: 21px;
+    }
+
+    .day-header span {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      opacity: .9;
+      white-space: nowrap;
+    }
+
+    .day-body {
+      padding: 16px 18px;
+    }
+
+    .day-body ul {
+      margin: 8px 0 0;
+      padding-left: 21px;
+    }
+
+    .city-label {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: var(--red-dark);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      background: #fff;
+      break-inside: avoid;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    figcaption {
+      padding: 9px 11px;
+      font-size: 14px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: #fffdfa;
+      break-inside: avoid;
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+    }
+
+    .checklist li {
+      padding: 7px 0 7px 28px;
+      border-bottom: 1px dashed var(--line);
+      position: relative;
+    }
+
+    .checklist li::before {
+      content: "□";
+      position: absolute;
+      left: 3px;
+      color: var(--red);
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .small {
+      color: var(--muted);
+      font: 13px/1.45 Arial, sans-serif;
+    }
+
+    .total {
+      font-weight: bold;
+      color: var(--red-dark);
+    }
+
+    footer {
+      padding: 25px 0 50px;
+      color: var(--muted);
+      font: 12px/1.5 Arial, sans-serif;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: 100%;
+      }
+
+      .cover {
+        min-height: 560px;
+        padding: 45px 24px;
+      }
+
+      main {
+        padding: 30px 18px;
+      }
+
+      .photo-grid,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .day-header {
+        display: block;
+      }
+
+      .day-header span {
+        display: block;
+        margin-top: 5px;
+      }
+
+      .route-table, .budget-table {
+        font-size: 12px;
+      }
+
+      th, td {
+        padding: 7px 6px;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 13mm;
+      }
+
+      body {
+        background: white;
+      }
+
+      .page {
+        width: 100%;
+      }
+
+      .cover {
+        min-height: 265mm;
+        page-break-after: always;
+        box-shadow: none;
+      }
+
+      main {
+        box-shadow: none;
+        padding: 0;
+      }
+
+      section {
+        break-inside: auto;
+      }
+
+      h2 {
+        break-after: avoid;
+      }
+
+      .day {
+        break-inside: avoid;
+      }
+
+      a {
+        color: inherit;
+        border: 0;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header class="cover">
+      <div class="cover-kicker">Маршрутный план · Япония · 2026</div>
+      <h1>Осака — Киото — Кавагутико — Токио</h1>
+      <p>
+        Практический черновик поездки на двоих с 10 по 26 ноября.
+        Япония, Фудзи, аниме, винил, Гарри Поттер, Нара и старые районы Токио.
+      </p>
+
+      <div class="cover-meta">
+        <span class="pill">10–26 ноября 2026</span>
+        <span class="pill">15 ночей в Японии</span>
+        <span class="pill">Кавагутико — 1 ночь</span>
+        <span class="pill">Disney и teamLab исключены</span>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Коротко о маршруте</h2>
+
+        <p class="lead">
+          Базовый маршрут рассчитан на один день в Кавагутико, обязательную поездку
+          в Нару и большую токийскую часть. USJ оставлен в двух вариантах:
+          с посещением парка или с альтернативным днём в Осаке.
+        </p>
+
+        <div class="warning">
+          <strong>Бюджетное замечание.</strong>
+          При уже купленных билетах и текущих ценах отелей бюджет в 400 000 ₽
+          достижим только при контроле покупок и выборе между USJ и более дешёвым
+          осакским днём. Винил, фигурки и косметика считаются отдельно и могут
+          быстро увеличить сумму.
+        </div>
+
+        <table class="route-table">
+          <thead>
+            <tr>
+              <th>Даты</th>
+              <th>База</th>
+              <th>Основная идея</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10–13 ноября</td>
+              <td>Осака</td>
+              <td>Намба, Дотонбори, USJ или центральная Осака</td>
+            </tr>
+            <tr>
+              <td>13–17 ноября</td>
+              <td>Киото</td>
+              <td>Арасияма, Фусими Инари, восточная часть города, Нара</td>
+            </tr>
+            <tr>
+              <td>17–18 ноября</td>
+              <td>Кавагутико</td>
+              <td>Озеро, Фудзи, велосипед</td>
+            </tr>
+            <tr>
+              <td>18–25 ноября</td>
+              <td>Токио</td>
+              <td>Ghibli, Сибуя, винил, фигурки, рукоделие, старые районы</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>План по дням</h2>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>10 ноября · Москва → Шанхай</h3>
+            <span>Перелёт</span>
+          </div>
+          <div class="day-body">
+            Вылет из Шереметьево в 19:10. Пересадка в Шанхае — 5 часов 45 минут.
+            Заранее проверить правила транзита, терминал и необходимость получения багажа.
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>11 ноября · Прибытие в Осаку</h3>
+            <span>Ночёвка: Осака</span>
+          </div>
+          <div class="day-body">
+            <span class="city-label">Осака · Намба</span>
+            <ul>
+              <li>Прилёт в Кансай в 18:00.</li>
+              <li>Переезд из аэропорта в Намбу и заселение в APA Hotel Namba-Ekihigashi.</li>
+              <li>Вечерняя прогулка: Дотонбори, Эбису-баси, Шинсайбаси.</li>
+              <li>Ужин и спокойное знакомство с городом.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>12 ноября · Осака: два варианта</h3>
+            <span>Ночёвка: Осака</span>
+          </div>
+          <div class="day-body">
+            <div class="two-col">
+              <div class="card">
+                <h3>Вариант A · USJ</h3>
+                <ul>
+                  <li>Целый день в Universal Studios Japan.</li>
+                  <li>Главный приоритет — The Wizarding World of Harry Potter.</li>
+                  <li>Хогсмид, замок Хогвартс, тематические магазины.</li>
+                  <li>Super Nintendo World — по желанию.</li>
+                  <li><strong>Express Pass не закладывается.</strong></li>
+                </ul>
+                <p class="small">
+                  USJ особенно оправдан ради атмосферы и тематических зон.
+                  Если аттракционы совсем неинтересны, день может показаться дорогим.
+                </p>
+              </div>
+
+              <div class="card">
+                <h3>Вариант B · Осака дешевле</h3>
+                <ul>
+                  <li>Замок Осаки.</li>
+                  <li>Район Умэда.</li>
+                  <li>Umeda Sky Building — по желанию.</li>
+                  <li>Nipponbashi / Den-Den Town.</li>
+                  <li>Аниме-магазины и фигурки.</li>
+                  <li>Вечером — Дотонбори.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>13 ноября · Осака → Киото</h3>
+            <span>Ночёвка: Киото</span>
+          </div>
+          <div class="day-body">
+            <span class="city-label">Киото · первый вечер</span>
+            <ul>
+              <li>Переезд в Киото и заселение в APA Hotel Kyoto-Ekikita.</li>
+              <li>Kyoto Station и окрестности.</li>
+              <li>Хигаси Хонган-дзи.</li>
+              <li>Вечером: Гион, Ясака-дзиндзя, Нэнин-дзака и Саннэн-дзака.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>14 ноября · Арасияма</h3>
+            <span>Ночёвка: Киото</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Ранний приезд в Арасияму.</li>
+              <li>Бамбуковая роща.</li>
+              <li>Храм Тэнрю-дзи.</li>
+              <li>Мост Тогэцу-кё и прогулка вдоль реки.</li>
+              <li>Обезьяний парк — по желанию.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>15 ноября · Фусими Инари и восточный Киото</h3>
+            <span>Ночёвка: Киото</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Утром — Фусими Инари и красные ворота тории.</li>
+              <li>Киёми-дэра.</li>
+              <li>Хигасияма и Кодаи-дзи.</li>
+              <li>Ясака-дзинъя и Гион.</li>
+            </ul>
+            <p class="small">
+              Фусими Инари лучше посещать рано утром или ближе к вечеру, когда
+              на нижних участках маршрута меньше людей.
+            </p>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>16 ноября · Замок Нидзё и Нара</h3>
+            <span>Ночёвка: Киото</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Утром — замок Нидзё.</li>
+              <li>Переезд в Нару.</li>
+              <li>Парк Нары и олени.</li>
+              <li>Тодай-дзи и Большой Будда.</li>
+              <li>Касуга-тайся — если останутся силы.</li>
+              <li>Возвращение в Киото вечером.</li>
+            </ul>
+            <div class="success">
+              <strong>Нара обязательна.</strong>
+              Этот день не заменяется свободным днём в Киото.
+            </div>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>17 ноября · Киото → Кавагутико</h3>
+            <span>Ночёвка: Кавагутико</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Ранний выезд из Киото.</li>
+              <li>Переезд в район Кавагутико.</li>
+              <li>Заселение или сдача вещей в Kawaguchiko Hotel.</li>
+              <li>Озеро, парк Оиси и первые виды на Фудзи.</li>
+              <li>Спокойный вечер или онсэн.</li>
+            </ul>
+            <p class="small">
+              Большой багаж желательно отправить из Киото сразу в токийский отель.
+              В Кавагутико взять рюкзак на одну ночь.
+            </p>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>18 ноября · Фудзи → Токио</h3>
+            <span>Ночёвка: Токио</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Ранним утром проверить видимость Фудзи.</li>
+              <li>Прокат велосипедов и северный берег озера.</li>
+              <li>Парк Оиси.</li>
+              <li>Пагода Тюрейто или канатная дорога — только если останется время.</li>
+              <li>После обеда — переезд в Токио.</li>
+              <li>Заселение в APA Hotel Asakusa Tawaramachi Ekimae.</li>
+              <li>Вечерняя прогулка по Асакусе.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>19 ноября · Асакуса и манэки-нэко</h3>
+            <span>Ночёвка: Токио</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Сэнсо-дзи и ворота Каминаримон.</li>
+              <li>Улица Накамисэ.</li>
+              <li>Район Асакуса и набережная Сумида.</li>
+              <li>Imado-jinja — дополнительное место, связанное с манэки-нэко.</li>
+              <li>Сувениры и спокойный вечер рядом с отелем.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>20 ноября · Музей Ghibli</h3>
+            <span>Ночёвка: Токио</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Музей Ghibli в Митаке.</li>
+              <li>Парк Инокасира.</li>
+              <li>Кичидзёдзи.</li>
+              <li>Кафе и магазины района.</li>
+            </ul>
+            <p class="small">
+              Билеты в музей Ghibli нужно покупать заранее. Не планировать на этот
+              день слишком много поездок в другие районы.
+            </p>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>21 ноября · Сибуя, Tower Records и косметика</h3>
+            <span>Ночёвка: Токио</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Shibuya Scramble Crossing.</li>
+              <li>Shibuya Sky.</li>
+              <li>Tower Records Shibuya.</li>
+              <li>Disk Union Shibuya — поиск винила.</li>
+              <li>Харадзюку и храм Мэйдзи-дзингу.</li>
+              <li>@cosme TOKYO, Don Quijote, Matsumoto Kiyoshi, Loft.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>22 ноября · Акихабара и Ochanomizu</h3>
+            <span>Ночёвка: Токио</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Radio Kaikan.</li>
+              <li>AmiAmi, Mandarake, Surugaya, Lashinbang, Jungle.</li>
+              <li>Сравнивать цены перед покупкой фигурок.</li>
+              <li>Ochanomizu: мосты и железнодорожные линии.</li>
+              <li>При желании — вечер у Tokyo Station.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>23 ноября · Tokyo Station и Nakano Broadway</h3>
+            <span>Ночёвка: Токио</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Tokyo Station и район Marunouchi.</li>
+              <li>Торговый центр KITTE.</li>
+              <li>Вид на станцию с верхней площадки KITTE.</li>
+              <li>Tokyo Character Street.</li>
+              <li>Nakano Broadway и магазины Mandarake.</li>
+            </ul>
+            <p class="small">
+              Вероятно, имелся в виду Nakano Broadway, а не Nanko Broadway.
+            </p>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>24 ноября · Янака, Ниппори и Одайба</h3>
+            <span>Ночёвка: Токио</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Янака Ginza и старые улочки.</li>
+              <li>Котики и небольшие храмы.</li>
+              <li>Nippori Textile Town: пряжа, ткани и фурнитура.</li>
+              <li>Одайба: набережная, DiverCity, большой Gundam.</li>
+              <li>Decks и вид на Rainbow Bridge.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>25 ноября · Токио → Нарита</h3>
+            <span>Вылет в 16:55</span>
+          </div>
+          <div class="day-body">
+            <ul>
+              <li>Спокойное утро и упаковка покупок.</li>
+              <li>При желании — короткая прогулка в Асакусе.</li>
+              <li>Из отеля выехать примерно в 12:00–12:30.</li>
+              <li>Приехать в Нариту с запасом 2,5–3 часа.</li>
+              <li>Вылет в Доху, затем Москва.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-header">
+            <h3>26 ноября · Прибытие в Москву</h3>
+            <span>Шереметьево около 07:00</span>
+          </div>
+          <div class="day-body">
+            Завершение поездки.
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2>Фотографии и ключевые места</h2>
+
+        <div class="photo-grid">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=900&q=80" alt="Улица Дотонбори в Осаке">
+            <figcaption><strong>Осака.</strong> Дотонбори и Намба.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=900&q=80" alt="Красные ворота тории">
+            <figcaption><strong>Киото.</strong> Фусими Инари.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=80" alt="Японский храм и гора">
+            <figcaption><strong>Япония.</strong> Храмы и горные пейзажи.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://images.unsplash.com/photo-1578632292335-df3abbb0d586?auto=format&fit=crop&w=900&q=80" alt="Японская улица">
+            <figcaption><strong>Токио.</strong> Районы для прогулок и шопинга.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=900&q=80" alt="Токио ночью">
+            <figcaption><strong>Токио.</strong> Сибуя и вечерний город.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=900&q=80" alt="Вид на Токио">
+            <figcaption><strong>Токио.</strong> Панорамы и городская архитектура.</figcaption>
+          </figure>
+        </div>
+
+        <p class="small">
+          Фотографии в этом черновике являются иллюстрациями и загружаются из Unsplash.
+          Перед публикацией или распространением файла проверьте условия использования
+          конкретных изображений.
+        </p>
+      </section>
+
+      <section>
+        <h2>Ориентировочный бюджет на двоих</h2>
+
+        <table class="budget-table">
+          <thead>
+            <tr>
+              <th>Категория</th>
+              <th>Экономный ориентир</th>
+              <th>Более комфортно</th>
+              <th>Комментарий</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Авиабилеты</td>
+              <td>147 000 ₽</td>
+              <td>147 000 ₽</td>
+              <td>Уже куплены</td>
+            </tr>
+            <tr>
+              <td>Отели</td>
+              <td>115 600 ₽</td>
+              <td>115 600 ₽</td>
+              <td>По указанным ценам</td>
+            </tr>
+            <tr>
+              <td>Питание</td>
+              <td>50 000 ₽</td>
+              <td>70 000 ₽</td>
+              <td>Комбини, недорогие кафе, иногда ресторан</td>
+            </tr>
+            <tr>
+              <td>Транспорт</td>
+              <td>30 000 ₽</td>
+              <td>45 000 ₽</td>
+              <td>Без регулярного использования такси</td>
+            </tr>
+            <tr>
+              <td>Входные билеты без USJ</td>
+              <td>15 000 ₽</td>
+              <td>25 000 ₽</td>
+              <td>Ghibli, Shibuya Sky, храмы, Нара и прочее</td>
+            </tr>
+            <tr>
+              <td>USJ</td>
+              <td>+15 000–25 000 ₽</td>
+              <td>+20 000–35 000 ₽</td>
+              <td>Без Express Pass; точная сумма зависит от даты</td>
+            </tr>
+            <tr>
+              <td>Доставка багажа</td>
+              <td>3 000–6 000 ₽</td>
+              <td>6 000–10 000 ₽</td>
+              <td>Зависит от количества чемоданов и направлений</td>
+            </tr>
+            <tr>
+              <td>Покупки и сувениры</td>
+              <td>20 000 ₽</td>
+              <td>50 000 ₽</td>
+              <td>Фигурки, винил, косметика, пряжа, сувениры</td>
+            </tr>
+            <tr>
+              <td class="total">Итого без USJ</td>
+              <td class="total">380 600–394 600 ₽</td>
+              <td class="total">444 600–492 600 ₽</td>
+              <td>Ориентир, не окончательная смета</td>
+            </tr>
+            <tr>
+              <td class="total">Итого с USJ</td>
+              <td class="total">395 600–419 600 ₽</td>
+              <td class="total">464 600–527 600 ₽</td>
+              <td>Без Express Pass</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="two-col">
+          <div class="card">
+            <h3>Уже оплачено или запланировано</h3>
+            <ul>
+              <li>Авиабилеты: 147 000 ₽.</li>
+              <li>Отели: 115 600 ₽.</li>
+              <li>Всего: 262 600 ₽.</li>
+              <li>Остаток от 400 000 ₽: 137 400 ₽.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Покупки: желательно установить лимиты</h3>
+            <ul>
+              <li>Фигурки и аниме: 10 000–15 000 ₽.</li>
+              <li>Винил: 10 000–15 000 ₽.</li>
+              <li>Косметика: 5 000–10 000 ₽.</li>
+              <li>Пряжа и рукоделие: 5 000–10 000 ₽.</li>
+              <li>Сувениры: 3 000–5 000 ₽.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="warning">
+          <strong>Резерв 500 евро.</strong>
+          Не включён в основной бюджет. Лучше считать его аварийным запасом,
+          а не деньгами на шопинг.
+        </div>
+      </section>
+
+      <section>
+        <h2>Где искать покупки</h2>
+
+        <div class="two-col">
+          <div class="card">
+            <h3>Фигурки и аниме</h3>
+            <ul>
+              <li>Акихабара: Radio Kaikan, AmiAmi, Mandarake, Surugaya, Lashinbang, Jungle.</li>
+              <li>Nakano Broadway: особенно Mandarake и подержанные товары.</li>
+              <li>Den-Den Town в Осаке — сравнить цены с Токио.</li>
+              <li>Перед покупкой проверять состояние коробки и комплектность.</li>
+              <li>Для Naruto, Bleach, Jujutsu Kaisen и других серий искать Jump Shop и Animate.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Винил</h3>
+            <ul>
+              <li>Tower Records Shibuya — новые релизы и большая музыкальная коллекция.</li>
+              <li>Disk Union Shibuya.</li>
+              <li>Disk Union Shinjuku.</li>
+              <li>HMV record shop.</li>
+              <li>Сравнивать состояние пластинки и цену в нескольких магазинах.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Пряжа и рукоделие</h3>
+            <ul>
+              <li>Nippori Textile Town — ткани, фурнитура, пряжа.</li>
+              <li>Yuzawaya — проверить актуальный филиал ближе к поездке.</li>
+              <li>Loft и Tokyu Hands — отдельные товары для творчества.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Косметика</h3>
+            <ul>
+              <li>@cosme TOKYO.</li>
+              <li>Matsumoto Kiyoshi.</li>
+              <li>Sundrug.</li>
+              <li>Don Quijote.</li>
+              <li>Loft и Tokyu Hands.</li>
+              <li>Сравнить цены хотя бы в двух сетях.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Что нужно забронировать и проверить</h2>
+
+        <ul class="checklist">
+          <li>Билеты в музей Ghibli.</li>
+          <li>Билеты в USJ, если выбран вариант с парком.</li>
+          <li>Shibuya Sky, если хотите попасть в конкретный временной слот.</li>
+          <li>Транспорт Киото → Кавагутико.</li>
+          <li>Автобус Кавагутико → Токио.</li>
+          <li>Прокат велосипедов в Кавагутико.</li>
+          <li>Принимает ли токийский APA Hotel багаж до даты заселения.</li>
+          <li>Терминал обратного рейса в аэропорту Нарита.</li>
+          <li>Правила транзита в Шанхае и Дохе.</li>
+          <li>Актуальные часы работы магазинов и временных аниме-мероприятий.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Полезные ссылки</h2>
+
+        <ul>
+          <li><a href="https://www.usj.co.jp/web/en/us" target="_blank">Официальный сайт USJ</a></li>
+          <li><a href="https://www.ghibli-museum.jp/en/" target="_blank">Официальный сайт музея Ghibli</a></li>
+          <li><a href="https://www.shibuya-scramble-square.com/sky/" target="_blank">Официальный сайт Shibuya Sky</a></li>
+          <li><a href="https://www.gotokyo.org/en/" target="_blank">Официальный туристический сайт Токио</a></li>
+          <li><a href="https://www.japan.travel/en/" target="_blank">Официальный туристический сайт Японии</a></li>
+        </ul>
+
+        <p class="small">
+          Временные выставки, pop-up-магазины и аниме-коллаборации лучше проверять
+          ближе к ноябрю 2026 года: состав мероприятий может измениться.
+        </p>
+      </section>
+
+      <section>
+        <h2>Краткий итог</h2>
+
+        <div class="success">
+          <strong>Базовое решение:</strong>
+          оставить одну ночь в Кавагутико, обязательно съездить в Нару,
+          исключить Disney и teamLab, а USJ выбирать между двумя вариантами.
+          Если приоритет — бюджет, выбрать Осаку без USJ. Если приоритет —
+          Гарри Поттер, выбрать USJ без Express Pass.
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Черновой маршрут составлен для обсуждения. Цены, расписания, правила входа
+      и работа магазинов требуют проверки ближе к поездке.
+    </footer>
+  </div>
+</body>
+</html>
