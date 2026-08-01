@@ -13,6 +13,57 @@
   align-items: center;
 }
 
+.schedule-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.meta-pill {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #eef6fb;
+  color: #315d78;
+  font-size: 0.84rem;
+}
+
+.pill-warning {
+  background: rgba(255, 111, 100, 0.12);
+  color: #bf3c30;
+}
+
+.pill-weather {
+  background: rgba(101, 136, 255, 0.12);
+  color: #2e4bc7;
+}
+
+.pill-status {
+  background: rgba(78, 189, 111, 0.14);
+  color: #1f6a3e;
+}
+
+.personal-note {
+  margin-top: 10px;
+  font-style: italic;
+  color: #4c5a63;
+}
+
+.schedule-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.action-button {
+  border: 1px solid #315d78;
+  background: transparent;
+  color: #315d78;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .time {
   font-weight: 700;
   color: #315d78;

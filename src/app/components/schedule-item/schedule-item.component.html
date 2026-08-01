@@ -7,6 +7,16 @@
     </button>
   </div>
 
+  <div class="schedule-meta">
+    <span *ngIf="item.type" class="meta-pill">{{ item.type }}</span>
+    <span *ngIf="item.durationMinutes" class="meta-pill">{{ item.durationMinutes }} мин</span>
+    <span *ngIf="item.estimatedCost" class="meta-pill">≈ {{ item.estimatedCost | number:'0.0-0' }} ₽</span>
+    <span *ngIf="priorityLabel" class="meta-pill">{{ priorityLabel }}</span>
+    <span *ngIf="item.reservationRequired" class="meta-pill pill-warning">Требует брони</span>
+    <span *ngIf="item.weatherDependent" class="meta-pill pill-weather">Зависит от погоды</span>
+    <span *ngIf="item.status" class="meta-pill pill-status">{{ item.status }}</span>
+  </div>
+
   <div class="schedule-actions">
     <button *ngIf="item.photoUrl" class="action-button" type="button" (click)="openPhoto()">Фото</button>
     <button *ngIf="item.googleMapsUrl" class="action-button" type="button" (click)="openMap()">На карте</button>
@@ -18,5 +28,6 @@
 
   <div *ngIf="openDetails()" class="details">
     <p>{{ item.details || 'Дополнительной информации нет.' }}</p>
+    <p *ngIf="item.personalNote" class="personal-note"><strong>Заметка:</strong> {{ item.personalNote }}</p>
   </div>
 </div>

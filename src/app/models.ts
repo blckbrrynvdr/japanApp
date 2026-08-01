@@ -18,13 +18,25 @@ export interface Day {
   schedule: ScheduleItem[];
 }
 
-export interface ScheduleItem {
+export interface TripPoint {
   time: string;
   description: string;
   photoUrl?: string;
   googleMapsUrl?: string;
+  durationMinutes?: number;
+  type?: 'museum' | 'shopping' | 'food' | 'transport' | 'viewpoint' | 'temple' | string;
+  priority?: number | 'must' | 'high' | 'medium' | 'low';
+  reservationRequired?: boolean;
+  completed?: boolean;
+  weatherDependent?: boolean;
+  estimatedCost?: number;
+  tags?: string[];
+  status?: 'planned' | 'visited' | 'skipped';
+  personalNote?: string;
   details?: string;
 }
+
+export type ScheduleItem = TripPoint;
 
 export interface Budget {
   totalLimit: number;

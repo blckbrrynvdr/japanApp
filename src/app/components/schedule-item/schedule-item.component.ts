@@ -28,4 +28,14 @@ export class ScheduleItemComponent {
       window.open(this.item.googleMapsUrl, '_blank');
     }
   }
+
+  protected get priorityLabel(): string | undefined {
+    if (this.item.priority === undefined || this.item.priority === null) {
+      return undefined;
+    }
+
+    return typeof this.item.priority === 'number'
+      ? `Приоритет ${this.item.priority}`
+      : `Приоритет ${this.item.priority}`;
+  }
 }
