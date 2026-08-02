@@ -1943,7 +1943,7 @@ License: "Apache-2.0"
    limitations under the License.
 
 --------------------------------------------------------------------------------
-Package: @taiga-ui/kit
+Package: @ng-web-apis/mutation-observer
 License: "Apache-2.0"
 
                                  Apache License
@@ -2138,7 +2138,7 @@ License: "Apache-2.0"
    limitations under the License.
 
 --------------------------------------------------------------------------------
-Package: @ng-web-apis/mutation-observer
+Package: @taiga-ui/kit
 License: "Apache-2.0"
 
                                  Apache License

@@ -118,3 +118,12 @@
   border-radius: 10px;
   padding: 10px 12px;
 }
+
+.pic-title {
+  color: white;
+  text-align: center;
+}
+
+:host-context(tui-root._mobile) tui-preview .t-title {
+  display: block !important;
+}

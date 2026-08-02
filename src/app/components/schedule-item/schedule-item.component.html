@@ -37,22 +37,29 @@
   </div>
 </div>
 
-<ng-template
-  [tuiPreviewDialog]="previewOpen()"
-  (tuiPreviewDialogChange)="previewOpen.set($event)"
->
-  <tui-preview [zoomable]="true">
-    <img
-      [src]="item.photos![previewIndex()].url"
-      [alt]="item.photos![previewIndex()].caption || item.description"
-    />
-    <tui-preview-title>
-      {{ item.photos![previewIndex()].caption || item.description }}
-    </tui-preview-title>
+<ng-template #preview let-preview>
+  <tui-preview
+    [rotatable]="true"
+    (tuiSwipe)="onSwipe($event)"
+  >
+    <tui-preview-title>{{ item.photos![previewIndex].caption || item.description }}</tui-preview-title>
     <tui-preview-pagination
       [length]="item.photos!.length"
-      [index]="previewIndex()"
-      (indexChange)="previewIndex.set($event)"
+      [(index)]="previewIndex"
     />
+    <button
+      iconStart="@tui.x"
+      tuiIconButton
+      tuiPreviewAction
+      type="button"
+      (click)="preview.complete()"
+    >
+      Close
+    </button>
+    <img
+      [src]="item.photos![previewIndex].url"
+      [alt]="item.photos![previewIndex].caption || item.description"
+    />
+    <h2 class="pic-title">{{ item.photos![previewIndex].caption || item.description }}</h2>
   </tui-preview>
 </ng-template>

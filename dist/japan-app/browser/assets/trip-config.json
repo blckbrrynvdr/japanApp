@@ -1,1343 +1,1347 @@
 {
-    "appContext": "Japan Travel Guide — ноябрь 2026. Москва → Осака → Киото → Кавагутико → Токио → Москва",
-    "agentInstructions": "Источник: docs/plan-v3-text.md. Дата конвертации: 02.08.2026. Следуй docs/agent-conversion-guide.md для обновлений.",
-    "days": [
+  "appContext": "Japan Travel Guide — ноябрь 2026. Москва → Осака → Киото → Кавагутико → Токио → Москва",
+  "agentInstructions": "Источник: docs/plan-v3-text.md. Дата конвертации: 02.08.2026. Следуй docs/agent-conversion-guide.md для обновлений.",
+  "days": [
+    {
+      "date": "10-11-2026",
+      "city": "Москва → Осака",
+      "startLocation": "Дом, Москва",
+      "endLocation": "Kansai Airport",
+      "schedule": [
         {
-            "date": "10-11-2026",
-            "city": "Москва → Осака",
-            "startLocation": "Дом, Москва",
-            "endLocation": "Kansai Airport",
-            "schedule": [
-                {
-                    "time": "15:30",
-                    "description": "Выезд в Шереметьево",
-                    "type": "transport",
-                    "durationMinutes": 120,
-                    "priority": "must",
-                    "estimatedCost": 1600,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sheremetyevo+Airport",
-                    "details": "Онлайн-регистрация, распечатка посадочного, заложить время на пробки.",
-                    "status": "planned"
-                },
-                {
-                    "time": "19:10",
-                    "description": "Рейс Москва → Осака через Шанхай",
-                    "type": "transport",
-                    "durationMinutes": 600,
-                    "priority": "must",
-                    "reservationRequired": true,
-                    "estimatedCost": 147000,
-                    "details": "Вылет из Шереметьево. Пересадка в Шанхае — 5 часов 45 минут. Конечный пункт — аэропорт Кансай (Осака). Взять тёплую кофту.",
-                    "tags": ["flight", "overnight", "transit"],
-                    "status": "planned"
-                }
-            ]
+          "time": "15:30",
+          "description": "Выезд в Шереметьево",
+          "type": "transport",
+          "durationMinutes": 120,
+          "priority": "must",
+          "estimatedCost": 1600,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sheremetyevo+Airport",
+          "details": "Онлайн-регистрация, распечатка посадочного, заложить время на пробки.",
+          "status": "planned"
         },
         {
-            "date": "11-11-2026",
-            "city": "Осака",
-            "startLocation": "Kansai Airport",
-            "endLocation": "APA Hotel Namba Ekihigashi",
-            "schedule": [
-                {
-                    "time": "18:00",
-                    "description": "Прибытие в аэропорт Кансай, паспортный контроль и багаж",
-                    "type": "transport",
-                    "durationMinutes": 60,
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kansai+Airport",
-                    "details": "Получить транспортную карту (ICOCA/Suica), снять наличные, проверить мобильный интернет.",
-                    "status": "planned"
-                },
-                {
-                    "time": "19:00",
-                    "description": "Nankai Airport Express: Кансай → Namba",
-                    "type": "transport",
-                    "durationMinutes": 50,
-                    "priority": "must",
-                    "estimatedCost": 1500,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Namba+Station",
-                    "details": "Поезд Nankai Airport Express, около 45–50 минут до Namba.",
-                    "tags": ["train"],
-                    "status": "planned"
-                },
-                {
-                    "time": "21:00",
-                    "description": "Заселение в APA Hotel Namba Ekihigashi",
-                    "type": "hotel",
-                    "durationMinutes": 30,
-                    "photos": [
-  {
-    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22EGUSYc-mFQi7a1gJwfj3vK_ATIKdjIKlVKV3b6x5Q&s",
-    "caption": "APA Hotel Namba Ekihigashi"
-  }
-],
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=APA+Hotel+Namba+Ekihigashi",
-                    "details": "Пешком от Namba. Проверить бронь, получить ключи.",
-                    "status": "planned"
-                },
-                {
-                    "time": "21:30",
-                    "description": "Вечерняя прогулка по Дотонбори",
-                    "type": "food",
-                    "durationMinutes": 90,
-                    "priority": "high",
-                    "estimatedCost": 4000,
-                    "photos": [
-  {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dotonbori_Namba_Osaka_JP.jpg/960px-Dotonbori_Namba_Osaka_JP.jpg",
-    "caption": "Дотонбори ночью"
-  }
-],
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dotonbori",
-                    "details": "Если останутся силы: вывеска Glico, поздний ужин — такояки, окономияки или рамен.",
-                    "tags": ["food", "viewpoint"],
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "12-11-2026",
-            "city": "Осака",
-            "startLocation": "APA Hotel Namba Ekihigashi",
-            "endLocation": "APA Hotel Namba Ekihigashi",
-            "schedule": [
-                {
-                    "time": "09:00",
-                    "description": "Осакский замок",
-                    "type": "viewpoint",
-                    "durationMinutes": 120,
-                    "priority": "high",
-                    "estimatedCost": 700,
-                    "photos": [
-  {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Osaka_castle_2009.jpg/960px-Osaka_castle_2009.jpg",
-    "caption": "Осакский замок"
-  }
-],
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Osaka+Castle",
-                    "details": "Метро до Osaka Castle. Осмотр территории и замка. Внутрь заходить необязательно, если не интересна музейная экспозиция.",
-                    "tags": ["history", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "12:00",
-                    "description": "Обед",
-                    "type": "food",
-                    "durationMinutes": 60,
-                    "priority": "medium",
-                    "estimatedCost": 2000,
-                    "details": "Перекус или обед в районе замка.",
-                    "status": "planned"
-                },
-                {
-                    "time": "13:30",
-                    "description": "Район Умэда",
-                    "type": "viewpoint",
-                    "durationMinutes": 210,
-                    "priority": "high",
-                    "estimatedCost": 1500,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Umeda+Sky+Building",
-                    "details": "Поезд до станции Osaka/Umeda. Osaka Station, торговые центры, Umeda Sky Building и смотровая площадка.",
-                    "tags": ["viewpoint", "shopping", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "18:00",
-                    "description": "Ужин и прогулка по Дотонбори и Синсайбаси",
-                    "type": "food",
-                    "durationMinutes": 180,
-                    "priority": "high",
-                    "estimatedCost": 5000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dotonbori",
-                    "details": "Возвращение в Намбу. Ужин и прогулка по Дотонбори, Синсайбаси, Hozenji Yokocho.",
-                    "tags": ["food", "viewpoint", "shopping"],
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "13-11-2026",
-            "city": "Осака",
-            "startLocation": "APA Hotel Namba Ekihigashi",
-            "endLocation": "APA Hotel Namba Ekihigashi",
-            "schedule": [],
-            "variants": [
-                {
-                    "id": "a-usj",
-                    "label": "A — USJ (The Wizarding World of Harry Potter)",
-                    "description": "Целый день в Universal Studios Japan, главная цель — зона Harry Potter.",
-                    "recommended": false,
-                    "schedule": [
-                        {
-                            "time": "07:00",
-                            "description": "Выезд в Universal Studios Japan",
-                            "type": "transport",
-                            "durationMinutes": 60,
-                            "priority": "must",
-                            "estimatedCost": 800,
-                            "details": "От Namba: линия Hanshin до Nishikujo, пересадка на JR Yumesaki Line до Universal City."
-                        },
-                        {
-                            "time": "08:30",
-                            "description": "Universal Studios Japan — The Wizarding World of Harry Potter",
-                            "type": "themepark",
-                            "durationMinutes": 540,
-                            "priority": "must",
-                            "reservationRequired": false,
-                            "estimatedCost": 16000,
-                            "details": "Главная цель — Hogsmeade и замок. Express Pass необязателен, если аттракционы не приоритетны. Заранее установить приложение USJ: для зоны Гарри Поттера иногда используется временной допуск.",
-                            "tags": ["themepark", "harrypotter"]
-                        }
-                    ]
-                },
-                {
-                    "id": "b-osaka",
-                    "label": "B — Осака без парка (Kuromon, Den Den Town, Shinsekai)",
-                    "description": "Рынок Куромон, Den Den Town, Синсэкай, Abeno Harukas.",
-                    "recommended": true,
-                    "schedule": [
-                        {
-                            "time": "09:00",
-                            "description": "Kuromon Market — завтрак и рынок",
-                            "type": "food",
-                            "durationMinutes": 90,
-                            "priority": "high",
-                            "estimatedCost": 3000,
-                            "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kuromon+Market",
-                            "details": "Свежие морепродукты, такояки, местные деликатесы.",
-                            "tags": ["food"]
-                        },
-                        {
-                            "time": "10:30",
-                            "description": "Den Den Town — аниме и фигурки",
-                            "type": "shopping",
-                            "durationMinutes": 150,
-                            "priority": "high",
-                            "estimatedCost": 0,
-                            "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Den+Den+Town+Osaka",
-                            "details": "Осакский аналог Акихабары: фигурки, манга, ретро-игры. Магазины Surugaya, Mandarake и небольшие комиссионные магазины.",
-                            "tags": ["anime", "shopping", "collectibles"]
-                        },
-                        {
-                            "time": "13:00",
-                            "description": "Синсэкай, башня Цутэнкаку и обед с кусикацу",
-                            "type": "food",
-                            "durationMinutes": 120,
-                            "priority": "medium",
-                            "estimatedCost": 3000,
-                            "details": "Пешком в район Синсэкай, к башне Цутэнкаку. Обед с кусикацу.",
-                            "tags": ["food", "viewpoint"]
-                        },
-                        {
-                            "time": "15:30",
-                            "description": "Abeno Harukas / дополнительный шопинг в Намбе",
-                            "type": "shopping",
-                            "durationMinutes": 150,
-                            "priority": "medium",
-                            "estimatedCost": 2000,
-                            "details": "Опционально: смотровая площадка Abeno Harukas. Либо дополнительный шопинг в Намбе.",
-                            "tags": ["viewpoint", "shopping"]
-                        },
-                        {
-                            "time": "19:00",
-                            "description": "Вечер в Дотонбори",
-                            "type": "food",
-                            "durationMinutes": 120,
-                            "priority": "medium",
-                            "estimatedCost": 4000,
-                            "details": "Ужин и вечерняя прогулка.",
-                            "tags": ["food"]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "date": "14-11-2026",
-            "city": "Осака → Киото",
-            "startLocation": "APA Hotel Namba Ekihigashi",
-            "endLocation": "APA Hotel Kyoto Ekikita",
-            "schedule": [
-                {
-                    "time": "08:30",
-                    "description": "Выселение из отеля и переезд в Киото",
-                    "type": "transport",
-                    "durationMinutes": 60,
-                    "priority": "must",
-                    "estimatedCost": 1400,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shin-Osaka+Station",
-                    "details": "Метро Midosuji Line: Namba → Shin-Osaka. Затем JR Special Rapid: Shin-Osaka → Kyoto. Общая продолжительность ~50–60 минут.",
-                    "tags": ["train", "transfer"],
-                    "status": "planned"
-                },
-                {
-                    "time": "09:45",
-                    "description": "Оставить багаж в APA Hotel Kyoto Ekikita",
-                    "type": "hotel",
-                    "durationMinutes": 30,
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "details": "Заселение позже — сначала сдать вещи и сразу на маршрут.",
-                    "status": "planned"
-                },
-                {
-                    "time": "10:30",
-                    "description": "Замок Нидзё",
-                    "type": "viewpoint",
-                    "durationMinutes": 90,
-                    "priority": "high",
-                    "estimatedCost": 1000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nijo+Castle",
-                    "details": "Метро до станции Nijojo-mae. Посещение замка Нидзё.",
-                    "tags": ["history", "culture"],
-                    "status": "planned"
-                },
-                {
-                    "time": "12:30",
-                    "description": "Рынок Нисики",
-                    "type": "food",
-                    "durationMinutes": 90,
-                    "priority": "high",
-                    "estimatedCost": 3000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nishiki+Market",
-                    "details": "После замка — рынок Нисики. Попробовать суши, такояки и местные сладости.",
-                    "tags": ["food", "shopping"],
-                    "status": "planned"
-                },
-                {
-                    "time": "14:30",
-                    "description": "Прогулка через центр к реке Камо",
-                    "type": "viewpoint",
-                    "durationMinutes": 90,
-                    "priority": "medium",
-                    "estimatedCost": 0,
-                    "details": "Пешком от Нисики через центр к реке Камо.",
-                    "tags": ["nature", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "17:00",
-                    "description": "Гион, Hanamikoji и Yasaka Shrine",
-                    "type": "viewpoint",
-                    "durationMinutes": 150,
-                    "priority": "high",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yasaka+Shrine",
-                    "details": "Вечерний Гион: улица Hanamikoji, храм Yasaka, вероятность увидеть гейшу. Ужин в районе.",
-                    "tags": ["culture", "temple", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "20:30",
-                    "description": "Заселение в APA Hotel Kyoto Ekikita",
-                    "type": "hotel",
-                    "durationMinutes": 30,
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "details": "Возвращение к Kyoto Station, заселение.",
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "15-11-2026",
-            "city": "Киото",
-            "startLocation": "APA Hotel Kyoto Ekikita",
-            "endLocation": "APA Hotel Kyoto Ekikita",
-            "schedule": [
-                {
-                    "time": "07:30",
-                    "description": "Арасияма — бамбуковая роща, храм Тэнрю-дзи, мост Тогэцукё",
-                    "type": "temple",
-                    "durationMinutes": 240,
-                    "priority": "high",
-                    "estimatedCost": 1000,
-                    "photos": [
-  {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Arashiyama_Bamboo_Grove_2016.jpg/960px-Arashiyama_Bamboo_Grove_2016.jpg",
-    "caption": "Бамбуковая роща в Арасияме"
-  }
-],
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Arashiyama+Bamboo+Grove",
-                    "details": "Ранний выезд JR Sagano Line до Saga-Arashiyama. До основной толпы: бамбуковая роща, Tenryu-ji, мост Togetsukyo. При хорошей погоде — прогулка вдоль реки.",
-                    "weatherDependent": true,
-                    "tags": ["nature", "temple", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "12:30",
-                    "description": "Обед в Арасияме",
-                    "type": "food",
-                    "durationMinutes": 60,
-                    "priority": "medium",
-                    "estimatedCost": 2000,
-                    "details": "Перекус в районе Арасиямы.",
-                    "status": "planned"
-                },
-                {
-                    "time": "14:00",
-                    "description": "Кинкаку-дзи — Золотой павильон",
-                    "type": "temple",
-                    "durationMinutes": 90,
-                    "priority": "medium",
-                    "estimatedCost": 500,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kinkaku-ji",
-                    "details": "Переезд к Золотому павильону. Если устанете — можно пропустить и провести больше времени в Арасияме.",
-                    "tags": ["temple", "culture", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "17:00",
-                    "description": "Свободный вечер около Kyoto Station",
-                    "type": "food",
-                    "durationMinutes": 180,
-                    "priority": "low",
-                    "estimatedCost": 3000,
-                    "details": "Возвращение в центр, ужин и прогулка у вокзала.",
-                    "tags": ["food"],
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "16-11-2026",
-            "city": "Киото",
-            "startLocation": "APA Hotel Kyoto Ekikita",
-            "endLocation": "APA Hotel Kyoto Ekikita",
-            "schedule": [
-                {
-                    "time": "07:00",
-                    "description": "Фусими Инари — красные ворота",
-                    "type": "temple",
-                    "durationMinutes": 150,
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fushimi+Inari+Taisha",
-                    "details": "Выход ~07:00. JR Nara Line: Kyoto Station → Inari. Подняться хотя бы до смотровой площадки, полный подъём на вершину необязателен. Утром ворота намного красивее и меньше людей.",
-                    "tags": ["culture", "temple", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "10:00",
-                    "description": "Храм Тофуку-дзи",
-                    "type": "temple",
-                    "durationMinutes": 90,
-                    "priority": "high",
-                    "estimatedCost": 500,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tofuku-ji",
-                    "details": "Особенно красив во время осенней листвы.",
-                    "tags": ["temple", "nature", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "12:00",
-                    "description": "Киёмидзу-дэра",
-                    "type": "temple",
-                    "durationMinutes": 90,
-                    "priority": "high",
-                    "estimatedCost": 400,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kiyomizu-dera",
-                    "details": "Смотровая площадка и территория храма.",
-                    "tags": ["temple", "viewpoint", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "14:00",
-                    "description": "Прогулка: Sannenzaka, Ninenzaka, Yasaka Pagoda, Maruyama Park, Гион",
-                    "type": "viewpoint",
-                    "durationMinutes": 180,
-                    "priority": "high",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sannenzaka+Kyoto",
-                    "details": "Пеший маршрут по старому Киото: Sannenzaka, Ninenzaka, Yasaka Pagoda, Maruyama Park, выход в Гион. Попутный перекус и фото.",
-                    "tags": ["culture", "photo", "shopping"],
-                    "status": "planned"
-                },
-                {
-                    "time": "18:00",
-                    "description": "Ужин и возвращение в отель",
-                    "type": "food",
-                    "durationMinutes": 120,
-                    "priority": "medium",
-                    "estimatedCost": 4000,
-                    "details": "Ужин в районе Гион или у станции.",
-                    "tags": ["food"],
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "17-11-2026",
-            "city": "Киото → Нара → Киото",
-            "startLocation": "APA Hotel Kyoto Ekikita",
-            "endLocation": "APA Hotel Kyoto Ekikita",
-            "schedule": [
-                {
-                    "time": "08:00",
-                    "description": "Поезд Kintetsu до Kintetsu-Nara",
-                    "type": "transport",
-                    "durationMinutes": 55,
-                    "priority": "must",
-                    "estimatedCost": 1200,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kintetsu-Nara+Station",
-                    "details": "От Kyoto Station поезд Kintetsu до Kintetsu-Nara (~45–55 минут). Эта станция ближе к парку, чем JR Nara. В этот день или утром отправить большой чемодан службой доставки из Киото в токийский отель — в Кавагутико взять только рюкзак на одну ночь.",
-                    "tags": ["train", "transfer"],
-                    "status": "planned"
-                },
-                {
-                    "time": "09:00",
-                    "description": "Парк Нара и олени",
-                    "type": "viewpoint",
-                    "durationMinutes": 60,
-                    "priority": "high",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nara+Park",
-                    "details": "Прогулка по парку, кормление оленей.",
-                    "tags": ["nature", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "10:00",
-                    "description": "Храм Тодай-дзи — Большой Будда",
-                    "type": "temple",
-                    "durationMinutes": 90,
-                    "priority": "must",
-                    "estimatedCost": 600,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Todai-ji",
-                    "details": "Главный храм с Большим Буддой. Один из самых впечатляющих объектов всей поездки.",
-                    "tags": ["temple", "culture", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "11:30",
-                    "description": "Nigatsudo — обзорная площадка",
-                    "type": "viewpoint",
-                    "durationMinutes": 30,
-                    "priority": "medium",
-                    "estimatedCost": 0,
-                    "details": "Хорошая обзорная площадка с видом на парк и город.",
-                    "tags": ["viewpoint", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "12:30",
-                    "description": "Kasuga Taisha",
-                    "type": "temple",
-                    "durationMinutes": 60,
-                    "priority": "high",
-                    "estimatedCost": 500,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kasuga+Taisha",
-                    "details": "Аллеи к святилищу с каменными фонарями.",
-                    "tags": ["temple", "culture"],
-                    "status": "planned"
-                },
-                {
-                    "time": "14:00",
-                    "description": "Обед и Naramachi",
-                    "type": "food",
-                    "durationMinutes": 120,
-                    "priority": "medium",
-                    "estimatedCost": 3000,
-                    "details": "Обед и по возможности — прогулка по району Naramachi.",
-                    "tags": ["food"],
-                    "status": "planned"
-                },
-                {
-                    "time": "17:00",
-                    "description": "Возвращение в Киото",
-                    "type": "transport",
-                    "durationMinutes": 55,
-                    "priority": "must",
-                    "estimatedCost": 1200,
-                    "details": "Поезд обратно до Kyoto Station. Отправить багаж в Токио службой доставки.",
-                    "tags": ["train"],
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "18-11-2026",
-            "city": "Киото → Кавагутико",
-            "startLocation": "APA Hotel Kyoto Ekikita",
-            "endLocation": "Kasuitei Ohya",
-            "schedule": [
-                {
-                    "time": "07:00",
-                    "description": "Выселение и синкансэн Kyoto → Mishima",
-                    "type": "transport",
-                    "durationMinutes": 150,
-                    "priority": "must",
-                    "estimatedCost": 13000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mishima+Station",
-                    "details": "Раннее выселение. Tokaido Shinkansen: Kyoto → Mishima. Лучше выбрать прямой Hikari, если будет в расписании.",
-                    "tags": ["train", "transfer"],
-                    "status": "planned"
-                },
-                {
-                    "time": "10:00",
-                    "description": "Автобус Mishima → Kawaguchiko",
-                    "type": "transport",
-                    "durationMinutes": 120,
-                    "priority": "must",
-                    "reservationRequired": true,
-                    "estimatedCost": 2500,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kawaguchiko+Station",
-                    "details": "От южного выхода Mishima Station автобус до Kawaguchiko Station. Бронировать заранее. Общая дорога с пересадкой ~4–5 часов.",
-                    "tags": ["bus", "transfer"],
-                    "status": "planned"
-                },
-{
-                    "time": "13:00",
-                    "description": "Прибытие в Кавагутико, заселение в Kasuitei Ohya",
-                    "type": "hotel",
-                    "durationMinutes": 30,
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kasuitei+Ohya+Kawaguchiko",
-                    "details": "Прибытие ~13:00–14:00. Номер в японском стиле с персональным онсеном и видом на Фудзи. Завтрак и ужин включены в стоимость."
-                },
-                {
-                    "time": "14:00",
-                    "description": "Велосипедная прогулка — южный берег озера",
-                    "type": "viewpoint",
-                    "durationMinutes": 210,
-                    "priority": "high",
-                    "estimatedCost": 1500,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchi",
-                    "details": "Взять велосипед, если позволяет время и погода. Проехать часть южного берега, мост Kawaguchiko Ohashi. В ноябре темнеет рано — полный круг лучше оставить на утро.",
-                    "weatherDependent": true,
-                    "tags": ["nature", "fuji", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "17:30",
-                    "description": "Закат у озера и заселение",
-                    "type": "viewpoint",
-                    "durationMinutes": 60,
-                    "priority": "high",
-                    "estimatedCost": 0,
-                    "details": "Встретить закат у озера, заселиться и отдыхать.",
-                    "tags": ["nature", "photo"],
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "19-11-2026",
-            "city": "Кавагутико → Токио",
-            "startLocation": "Kasuitei Ohya",
-            "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "schedule": [
-                {
-                    "time": "06:30",
-                    "description": "Велосипедная прогулка вокруг озера",
-                    "type": "viewpoint",
-                    "durationMinutes": 240,
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchi",
-                    "details": "Ранний подъём: утром Фудзи обычно видна лучше. Полный круг вокруг озера — около 20 км, ~3–4 часа с фотографиями. Самые красивые виды с северного берега. Выселиться заранее, вещи оставить в отеле.",
-                    "weatherDependent": true,
-                    "tags": ["nature", "fuji", "photo", "cycling"],
-                    "status": "planned"
-                },
-                {
-                    "time": "12:00",
-                    "description": "Возвращение за вещами и обед",
-                    "type": "food",
-                    "durationMinutes": 60,
-                    "priority": "medium",
-                    "estimatedCost": 2000,
-                    "details": "Забрать вещи из отеля, перекусить перед отправлением.",
-                    "status": "planned"
-                },
-                {
-                    "time": "13:30",
-                    "description": "Автобус Kawaguchiko → Shinjuku",
-                    "type": "transport",
-                    "durationMinutes": 150,
-                    "priority": "must",
-                    "reservationRequired": true,
-                    "estimatedCost": 2200,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Station",
-                    "details": "Желательно забронировать заранее. Прибытие в Shinjuku.",
-                    "tags": ["bus", "transfer"],
-                    "status": "planned"
-                },
-                {
-                    "time": "16:30",
-                    "description": "Заселение в APA Hotel Asakusa Tawaramachi Ekimae",
-                    "type": "hotel",
-                    "durationMinutes": 45,
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=APA+Hotel+Asakusa+Tawaramachi+Ekimae",
-                    "details": "Из Shinjuku — метро до станции Tawaramachi. Заселение. Большой чемодан должен прибыть службой доставки из Киото.",
-                    "status": "planned"
-                },
-                {
-                    "time": "18:00",
-                    "description": "Храм Сэнсо-дзи и Накамисэ",
-                    "type": "temple",
-                    "durationMinutes": 120,
-                    "priority": "high",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Senso-ji",
-                    "details": "Вечерняя прогулка: храм Сэнсо-дзи, улица Накамисэ, вид на Tokyo Skytree через реку.",
-                    "tags": ["culture", "temple"],
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "20-11-2026",
-            "city": "Токио",
-            "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "schedule": [
-                {
-                    "time": "08:30",
-                    "description": "Музей Гибли в Митаке",
-                    "type": "museum",
-                    "durationMinutes": 180,
-                    "priority": "must",
-                    "reservationRequired": true,
-                    "estimatedCost": 1000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ghibli+Museum+Mitaka",
-                    "details": "Метро и JR до станции Mitaka. Бронировать строго заранее. Время зависит от билета — если билет на другую дату, токийские дни можно переставить.",
-                    "tags": ["culture", "art"],
-                    "status": "planned"
-                },
-                {
-                    "time": "12:00",
-                    "description": "Парк Инокасира и обед в Kichijoji",
-                    "type": "food",
-                    "durationMinutes": 90,
-                    "priority": "medium",
-                    "estimatedCost": 3000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kichijoji",
-                    "details": "После музея пройти через парк Инокасира до Kichijoji. Обед.",
-                    "tags": ["food", "nature"],
-                    "status": "planned"
-                },
-                {
-                    "time": "14:00",
-                    "description": "Nakano Broadway — манга, фигурки, винил",
-                    "type": "shopping",
-                    "durationMinutes": 150,
-                    "priority": "high",
-                    "estimatedCost": 8000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nakano+Broadway",
-                    "details": "JR Chuo Line до Nakano. Mandarake, старые фигурки, аниме-товары, коллекционные издания, винил и японские саундтреки.",
-                    "tags": ["anime", "collectibles", "vinyl", "shopping"],
-                    "status": "planned"
-                },
-                {
-                    "time": "17:00",
-                    "description": "Okadaya Shinjuku — товары для вязания",
-                    "type": "shopping",
-                    "durationMinutes": 90,
-                    "priority": "high",
-                    "estimatedCost": 5000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Okadaya+Shinjuku",
-                    "details": "Для жены: пряжа, спицы, ткани, японские принадлежности для рукоделия.",
-                    "tags": ["wife", "knitting", "shopping"],
-                    "status": "planned"
-                },
-                {
-                    "time": "19:30",
-                    "description": "Возвращение в отель",
-                    "type": "transport",
-                    "durationMinutes": 30,
-                    "priority": "medium",
-                    "estimatedCost": 0,
-                    "details": "Метро до Tawaramachi.",
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "21-11-2026",
-            "city": "Токио",
-            "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "schedule": [
-                {
-                    "time": "09:00",
-                    "description": "Янака — кладбище, Yanaka Ginza, кошачьи магазины",
-                    "type": "viewpoint",
-                    "durationMinutes": 120,
-                    "priority": "high",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yanaka+Ginza",
-                    "details": "Доехать до станции Nippori. Прогуляться по Yanaka Cemetery, Yanaka Ginza, небольшим магазинам с кошачьей тематикой.",
-                    "tags": ["culture", "shopping"],
-                    "status": "planned"
-                },
-                {
-                    "time": "11:30",
-                    "description": "Акихабара — Radio Kaikan, AmiAmi, Mandarake, Surugaya, Lashinbang",
-                    "type": "shopping",
-                    "durationMinutes": 180,
-                    "priority": "must",
-                    "estimatedCost": 10000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Akihabara",
-                    "details": "JR до Akihabara. Основные магазины: Radio Kaikan, AmiAmi, Mandarake, Surugaya, Lashinbang. Для недорогих фигурок сначала смотреть подержанные товары в Mandarake, Surugaya и Lashinbang. Состояние обычно подробно указано.",
-                    "tags": ["anime", "shopping", "collectibles"],
-                    "status": "planned"
-                },
-                {
-                    "time": "15:30",
-                    "description": "Отяномидзу — мост Hijiribashi",
-                    "type": "viewpoint",
-                    "durationMinutes": 45,
-                    "priority": "medium",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hijiribashi+Tokyo",
-                    "details": "Пешком или одну станцию до Ochanomizu. Встать на мосту Hijiribashi — здесь видно пересечение железнодорожных линий и метро.",
-                    "tags": ["viewpoint", "photo", "train"],
-                    "status": "planned"
-                },
-                {
-                    "time": "16:30",
-                    "description": "Tokyo Station — Character Street, Jump Shop, KITTE Garden",
-                    "type": "shopping",
-                    "durationMinutes": 150,
-                    "priority": "high",
-                    "estimatedCost": 5000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo+Station",
-                    "details": "JR до Tokyo Station. Исторический фасад станции, Character Street, Jump Shop (Naruto, Bleach, Jujutsu Kaisen, Chainsaw Man и др.). Перейти в KITTE Marunouchi, подняться в сад на крыше — отличный вид на Tokyo Station.",
-                    "tags": ["anime", "shopping", "viewpoint", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "19:30",
-                    "description": "Возвращение в отель",
-                    "type": "transport",
-                    "durationMinutes": 30,
-                    "priority": "low",
-                    "estimatedCost": 0,
-                    "details": "Метро до Tawaramachi.",
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "22-11-2026",
-            "city": "Токио",
-            "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "schedule": [
-                {
-                    "time": "08:30",
-                    "description": "Gotokuji — храм манэки-нэко",
-                    "type": "temple",
-                    "durationMinutes": 60,
-                    "priority": "high",
-                    "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gotokuji",
-                    "details": "Храм с большим количеством манэки-нэко (кошек удачи). Утреннее посещение.",
-                    "tags": ["temple", "culture", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "10:30",
-                    "description": "Харадзюку: @cosme TOKYO, Такэсита, Омотэсандо, Мэйдзи Дзингу",
-                    "type": "shopping",
-                    "durationMinutes": 180,
-                    "priority": "high",
-                    "estimatedCost": 8000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Harajuku",
-                    "details": "Переезд в Харадзюку. @cosme TOKYO для японской косметики. При желании: Meiji Jingu, Takeshita Street, Omotesando.",
-                    "tags": ["wife", "shopping", "cosmetics", "temple"],
-                    "status": "planned"
-                },
-                {
-                    "time": "14:00",
-                    "description": "Сибуя: Tower Records, Shibuya PARCO, Mega Don Quijote",
-                    "type": "shopping",
-                    "durationMinutes": 180,
-                    "priority": "must",
-                    "estimatedCost": 10000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shibuya+Station",
-                    "details": "Tower Records Shibuya — большой выбор винила и японской музыки. Shibuya PARCO: Jump Shop, Nintendo Tokyo, Pokémon Center, временные аниме-магазины. Перекрёсток Shibuya Crossing. Mega Don Quijote Shibuya — косметика, сладости и сувениры.",
-                    "tags": ["music", "vinyl", "anime", "shopping"],
-                    "status": "planned"
-                },
-                {
-                    "time": "17:30",
-                    "description": "Shibuya Sky на закате",
-                    "type": "viewpoint",
-                    "durationMinutes": 90,
-                    "priority": "must",
-                    "reservationRequired": true,
-                    "estimatedCost": 2000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shibuya+Sky",
-                    "details": "Необходим билет на определённое время. Лучше выбрать закатное время.",
-                    "tags": ["viewpoint", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "19:30",
-                    "description": "Ужин в Сибуе",
-                    "type": "food",
-                    "durationMinutes": 90,
-                    "priority": "medium",
-                    "estimatedCost": 4000,
-                    "details": "Ужин в Сибуе, затем возвращение в отель.",
-                    "tags": ["food"],
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "23-11-2026",
-            "city": "Токио",
-            "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "schedule": [
-                {
-                    "time": "09:00",
-                    "description": "Одайба: Yurikamome, набережная, Gundam, DiverCity",
-                    "type": "viewpoint",
-                    "durationMinutes": 240,
-                    "priority": "high",
-                    "estimatedCost": 1000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Odaiba",
-                    "details": "Метро до Shimbashi, пересадка на Yurikamome (автоматический поезд с видами на Rainbow Bridge). Набережная, статуя Gundam у DiverCity, торговый центр. При желании — музей Miraikan.",
-                    "tags": ["viewpoint", "shopping", "photo"],
-                    "status": "planned"
-                },
-                {
-                    "time": "14:00",
-                    "description": "Гиндза: UNIQLO, GU, Muji, Mitsukoshi, Matsuya",
-                    "type": "shopping",
-                    "durationMinutes": 240,
-                    "priority": "high",
-                    "estimatedCost": 15000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginza",
-                    "details": "После обеда возвращение в центр. UNIQLO Ginza — крупный флагманский магазин. Дополнительно: GU, Muji, магазины косметики, универмаги Mitsukoshi и Matsuya.",
-                    "tags": ["shopping", "wife"],
-                    "status": "planned"
-                },
-                {
-                    "time": "19:00",
-                    "description": "Возвращение в Асакусу",
-                    "type": "transport",
-                    "durationMinutes": 30,
-                    "priority": "medium",
-                    "estimatedCost": 0,
-                    "details": "Вечернее возвращение. Японский государственный праздник — людей будет больше.",
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "24-11-2026",
-            "city": "Токио",
-            "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "schedule": [],
-            "variants": [
-                {
-                    "id": "a-hp-ikebukuro",
-                    "label": "A — Музей Гарри Поттера + Икэбукуро",
-                    "description": "Warner Bros. Studio Tour Tokyo (The Making of Harry Potter) и Икэбукуро после музея.",
-                    "recommended": false,
-                    "schedule": [
-                        {
-                            "time": "09:00",
-                            "description": "Warner Bros. Studio Tour Tokyo — The Making of Harry Potter",
-                            "type": "museum",
-                            "durationMinutes": 240,
-                            "priority": "must",
-                            "reservationRequired": true,
-                            "estimatedCost": 8000,
-                            "details": "Метро до станции Toshimaen. Заложить около 4 часов. Билет покупать заранее на конкретное время.",
-                            "tags": ["museum", "harrypotter"]
-                        },
-                        {
-                            "time": "14:00",
-                            "description": "Икэбукуро — Animate, Sunshine City, Pokémon Center",
-                            "type": "shopping",
-                            "durationMinutes": 180,
-                            "priority": "high",
-                            "estimatedCost": 5000,
-                            "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ikebukuro",
-                            "details": "Поезд до Ikebukuro. Animate Ikebukuro, Sunshine City, Pokémon Center, магазины фигурок и манги.",
-                            "tags": ["anime", "shopping"]
-                        }
-                    ]
-                },
-                {
-                    "id": "b-kamakura",
-                    "label": "B — Камакура (однодневная поездка)",
-                    "description": "Большой Будда, Хасэ-дэра, Комати-дори, храм Цуругаока Хатимангу.",
-                    "recommended": true,
-                    "schedule": [
-                        {
-                            "time": "08:00",
-                            "description": "Поезд JR Yokosuka Line до Kamakura",
-                            "type": "transport",
-                            "durationMinutes": 60,
-                            "priority": "must",
-                            "estimatedCost": 1500,
-                            "details": "Около часа от центра Токио."
-                        },
-                        {
-                            "time": "09:30",
-                            "description": "Котоку-ин — Большой Будда",
-                            "type": "temple",
-                            "durationMinutes": 60,
-                            "priority": "high",
-                            "estimatedCost": 300,
-                            "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kotoku-in+Kamakura",
-                            "details": "Местный поезд Enoden до Hase. Большой Будда Котоку-ин.",
-                            "tags": ["temple", "culture", "photo"]
-                        },
-                        {
-                            "time": "10:30",
-                            "description": "Храм Хасэ-дэра",
-                            "type": "temple",
-                            "durationMinutes": 60,
-                            "priority": "high",
-                            "estimatedCost": 400,
-                            "details": "Красивый храм с видом на море."
-                        },
-                        {
-                            "time": "12:00",
-                            "description": "Komachi-dori — обед и шопинг",
-                            "type": "food",
-                            "durationMinutes": 90,
-                            "priority": "medium",
-                            "estimatedCost": 3000,
-                            "details": "Обед на главной торговой улице."
-                        },
-                        {
-                            "time": "13:30",
-                            "description": "Храм Цуругаока Хатимангу",
-                            "type": "temple",
-                            "durationMinutes": 60,
-                            "priority": "medium",
-                            "estimatedCost": 0,
-                            "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tsurugaoka+Hachimangu",
-                            "details": "Главный храм Камакуры в центре города.",
-                            "tags": ["temple", "culture"]
-                        },
-                        {
-                            "time": "16:00",
-                            "description": "Поезд обратно в Токио",
-                            "type": "transport",
-                            "durationMinutes": 60,
-                            "priority": "must",
-                            "estimatedCost": 1500,
-                            "details": "Возвращение вечером."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "date": "25-11-2026",
-            "city": "Токио → Нарита → Москва",
-            "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
-            "endLocation": "Narita Airport",
-            "schedule": [
-                {
-                    "time": "08:00",
-                    "description": "Завтрак, выселение, последняя прогулка по Асакусе",
-                    "type": "hotel",
-                    "durationMinutes": 180,
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "details": "До 11:00 можно ещё раз прогуляться по Асакусе или купить последние сувениры.",
-                    "tags": ["shopping"],
-                    "status": "planned"
-                },
-                {
-                    "time": "11:45",
-                    "description": "Выезд из отеля: метро Tawaramachi → Ueno, Keisei Skyliner до Нариты",
-                    "type": "transport",
-                    "durationMinutes": 90,
-                    "priority": "must",
-                    "estimatedCost": 3000,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Keisei-Ueno+Station",
-                    "details": "Метро Ginza Line: Tawaramachi → Ueno. Пешком до Keisei-Ueno. Keisei Skyliner до нужного терминала Narita Airport. Прибытие в аэропорт ориентировочно в 13:15–13:40.",
-                    "tags": ["train"],
-                    "status": "planned"
-                },
-                {
-                    "time": "16:55",
-                    "description": "Вылет из Нариты",
-                    "type": "transport",
-                    "durationMinutes": 600,
-                    "priority": "must",
-                    "reservationRequired": true,
-                    "estimatedCost": 0,
-                    "details": "Пересадка в Дохе — 2 часа 20 минут.",
-                    "tags": ["flight"],
-                    "status": "planned"
-                }
-            ]
-        },
-        {
-            "date": "26-11-2026",
-            "city": "Москва",
-            "startLocation": "Doha Airport",
-            "endLocation": "Sheremetyevo Airport",
-            "schedule": [
-                {
-                    "time": "07:00",
-                    "description": "Прибытие в Шереметьево",
-                    "type": "transport",
-                    "durationMinutes": 0,
-                    "priority": "must",
-                    "estimatedCost": 0,
-                    "details": "Пересадка в Дохе — 2 часа 20 минут. Паспортный контроль и получение багажа. Конец поездки.",
-                    "tags": ["flight"],
-                    "status": "planned"
-                }
-            ]
+          "time": "19:10",
+          "description": "Рейс Москва → Осака через Шанхай",
+          "type": "transport",
+          "durationMinutes": 600,
+          "priority": "must",
+          "reservationRequired": true,
+          "estimatedCost": 147000,
+          "details": "Вылет из Шереметьево. Пересадка в Шанхае — 5 часов 45 минут. Конечный пункт — аэропорт Кансай (Осака). Взять тёплую кофту.",
+          "tags": ["flight", "overnight", "transit"],
+          "status": "planned"
         }
-    ],
-    "budget": {
-        "totalLimit": 450000,
-        "items": [
-            {
-                "category": "Авиабилеты",
-                "planned": 147000,
-                "actual": 147000,
-                "comment": "Уже куплены"
-            },
-            {
-                "category": "Отели",
-                "planned": 172810,
-                "actual": 172810,
-                "comment": "Осака 21 500, Киото 47 000, Кавагутико 38 000, Токио 66 310"
-            },
-            {
-                "category": "Питание",
-                "planned": 80000,
-                "actual": 0
-            },
-            {
-                "category": "Транспорт по Японии",
-                "planned": 40000,
-                "actual": 0,
-                "comment": "Синкансэн, автобусы, метро"
-            },
-            {
-                "category": "Входные билеты",
-                "planned": 15000,
-                "actual": 0,
-                "comment": "Без USJ и музея Гарри Поттера"
-            },
-            {
-                "category": "USJ (доплата)",
-                "planned": 14000,
-                "actual": 0,
-                "comment": "Если выбран вариант А на 13 ноября"
-            },
-            {
-                "category": "Музей Гарри Поттера (доплата)",
-                "planned": 10000,
-                "actual": 0,
-                "comment": "Если выбран вариант А на 24 ноября"
-            },
-            {
-                "category": "Доставка багажа",
-                "planned": 5000,
-                "actual": 0
-            },
-            {
-                "category": "Покупки и сувениры",
-                "planned": 30000,
-                "actual": 0,
-                "comment": "Запасные 500€ при необходимости"
-            }
-        ]
+      ]
     },
-    "payments": [
+    {
+      "date": "11-11-2026",
+      "city": "Осака",
+      "startLocation": "Kansai Airport",
+      "endLocation": "APA Hotel Namba Ekihigashi",
+      "schedule": [
         {
-            "description": "Авиабилеты Москва–Осака и Токио–Москва",
-            "amount": 147000,
-            "status": "paid"
+          "time": "18:00",
+          "description": "Прибытие в аэропорт Кансай, паспортный контроль и багаж",
+          "type": "transport",
+          "durationMinutes": 60,
+          "priority": "must",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kansai+Airport",
+          "details": "Получить транспортную карту (ICOCA/Suica), снять наличные, проверить мобильный интернет.",
+          "status": "planned"
         },
         {
-            "description": "APA Hotel Namba Ekihigashi (Осака, 11–14 ноября)",
-            "amount": 21500,
-            "status": "paid",
-            "link": "https://www.tbank.ru/travel/hotels/new/hotels/1166774/"
+          "time": "19:00",
+          "description": "Nankai Airport Express: Кансай → Namba",
+          "type": "transport",
+          "durationMinutes": 50,
+          "priority": "must",
+          "estimatedCost": 1500,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Namba+Station",
+          "details": "Поезд Nankai Airport Express, около 45–50 минут до Namba.",
+          "tags": ["train"],
+          "status": "planned"
         },
         {
-            "description": "APA Hotel Kyoto Ekikita (Киото, 14–18 ноября)",
-            "amount": 47000,
-            "status": "paid",
-            "link": "https://www.tbank.ru/travel/hotels/new/hotels/1167624/"
-        },
-        {
-            "description": "Kasuitei Ohya (Фудзикавагутико, 18–19 ноября)",
-            "amount": 38000,
-            "status": "paid",
-            "link": "https://www.tbank.ru/travel/hotels/new/hotels/1144438/"
-        },
-        {
-            "description": "APA Hotel Asakusa Tawaramachi Ekimae (Токио, 19–25 ноября)",
-            "amount": 66310,
-            "status": "paid",
-            "link": "https://www.tbank.ru/travel/hotels/new/hotels/1166775/"
-        },
-        {
-            "description": "Синкансэн Kyoto → Mishima и автобус до Кавагутико",
-            "amount": 0,
-            "status": "planned"
-        },
-        {
-            "description": "Автобус Кавагутико → Shinjuku",
-            "amount": 0,
-            "status": "planned"
-        }
-    ],
-    "shopping": {
-        "limit": 55000,
-        "items": [
+          "time": "21:00",
+          "description": "Заселение в APA Hotel Namba Ekihigashi",
+          "type": "hotel",
+          "durationMinutes": 30,
+          "photos": [
             {
-                "name": "Винил (Tower Records / Nakano)",
-                "estimatedPrice": 15000,
-                "actualPrice": 0,
-                "purchased": false
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22EGUSYc-mFQi7a1gJwfj3vK_ATIKdjIKlVKV3b6x5Q&s",
+              "caption": "APA Hotel Namba Ekihigashi"
             },
             {
-                "name": "Косметика (@cosme, Don Quijote)",
-                "estimatedPrice": 10000,
-                "actualPrice": 0,
-                "purchased": false
-            },
-            {
-                "name": "Фигурки и аниме-товары (Akihabara, Nakano)",
-                "estimatedPrice": 15000,
-                "actualPrice": 0,
-                "purchased": false
-            },
-            {
-                "name": "Пряжа и товары для вязания (Okadaya)",
-                "estimatedPrice": 5000,
-                "actualPrice": 0,
-                "purchased": false
-            },
-            {
-                "name": "Сувениры (манэки-нэко, омамори, сладости)",
-                "estimatedPrice": 5000,
-                "actualPrice": 0,
-                "purchased": false
-            },
-            {
-                "name": "Одежда (UNIQLO Ginza, GU)",
-                "estimatedPrice": 5000,
-                "actualPrice": 0,
-                "purchased": false
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22EGUSYc-mFQi7a1gJwfj3vK_ATIKdjIKlVKV3b6x5Q&s",
+              "caption": "APA Hotel Namba Ekihigashi"
             }
-        ]
+          ],
+          "priority": "must",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=APA+Hotel+Namba+Ekihigashi",
+          "details": "Пешком от Namba. Проверить бронь, получить ключи.",
+          "status": "planned"
+        },
+        {
+          "time": "21:30",
+          "description": "Вечерняя прогулка по Дотонбори",
+          "type": "food",
+          "durationMinutes": 90,
+          "priority": "high",
+          "estimatedCost": 4000,
+          "photos": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dotonbori_Namba_Osaka_JP.jpg/960px-Dotonbori_Namba_Osaka_JP.jpg",
+              "caption": "Дотонбори ночью"
+            }
+          ],
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dotonbori",
+          "details": "Если останутся силы: вывеска Glico, поздний ужин — такояки, окономияки или рамен.",
+          "tags": ["food", "viewpoint"],
+          "status": "planned"
+        }
+      ]
     },
-    "souvenirTips": [
-        "Akihabara и Nakano Broadway — лучшие точки для аниме, фигурок и коллекционных изданий. Смотреть подержанные товары в Mandarake, Surugaya и Lashinbang.",
-        "Okadaya Shinjuku — пряжа, спицы, ткани и японские принадлежности для рукоделия.",
-        "Tower Records Shibuya — большой выбор винила и японской музыки.",
-        "Don Quijote и Mega Don Quijote Shibuya — косметика, сладости, сувениры в одном месте.",
-        "Gotokuji — уникальные манэки-нэко (кошки удачи), отличный сувенир.",
-        "Tokyo Station Character Street и Jump Shop — товары по Naruto, Bleach, Jujutsu Kaisen, Chainsaw Man.",
-        "Nishiki Market в Киото — специи, местные сладости и кулинарные сувениры."
-    ],
-    "checklist": [
+    {
+      "date": "12-11-2026",
+      "city": "Осака",
+      "startLocation": "APA Hotel Namba Ekihigashi",
+      "endLocation": "APA Hotel Namba Ekihigashi",
+      "schedule": [
         {
-            "task": "Обновить даты отелей (Осака 11–14, Киото 14–18, Кавагутико 18–19, Токио 19–25)",
-            "done": true
+          "time": "09:00",
+          "description": "Осакский замок",
+          "type": "viewpoint",
+          "durationMinutes": 120,
+          "priority": "high",
+          "estimatedCost": 700,
+          "photos": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Osaka_castle_2009.jpg/960px-Osaka_castle_2009.jpg",
+              "caption": "Осакский замок"
+            }
+          ],
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Osaka+Castle",
+          "details": "Метро до Osaka Castle. Осмотр территории и замка. Внутрь заходить необязательно, если не интересна музейная экспозиция.",
+          "tags": ["history", "photo"],
+          "status": "planned"
         },
         {
-            "task": "Купить билеты в музей Гибли (нужна конкретная дата и время)",
-            "done": false
+          "time": "12:00",
+          "description": "Обед",
+          "type": "food",
+          "durationMinutes": 60,
+          "priority": "medium",
+          "estimatedCost": 2000,
+          "details": "Перекус или обед в районе замка.",
+          "status": "planned"
         },
         {
-            "task": "Забронировать автобус Mishima → Kawaguchiko (18 ноября)",
-            "done": false
+          "time": "13:30",
+          "description": "Район Умэда",
+          "type": "viewpoint",
+          "durationMinutes": 210,
+          "priority": "high",
+          "estimatedCost": 1500,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Umeda+Sky+Building",
+          "details": "Поезд до станции Osaka/Umeda. Osaka Station, торговые центры, Umeda Sky Building и смотровая площадка.",
+          "tags": ["viewpoint", "shopping", "photo"],
+          "status": "planned"
         },
         {
-            "task": "Забронировать автобус Kawaguchiko → Shinjuku (19 ноября)",
-            "done": false
-        },
-        {
-            "task": "Купить билеты на Shibuya Sky (закатное время, 22 ноября)",
-            "done": false
-        },
-        {
-            "task": "Купить билеты в USJ (если выбран вариант А на 13 ноября)",
-            "done": false
-        },
-        {
-            "task": "Купить билеты в музей Гарри Поттера (если выбран вариант А на 24 ноября)",
-            "done": false
-        },
-        {
-            "task": "Оформить доставку багажа из Киото в Токио (утром 17 или 18 ноября)",
-            "done": false
-        },
-        {
-            "task": "Проверить визовые требования для транзита в Шанхае",
-            "done": false
+          "time": "18:00",
+          "description": "Ужин и прогулка по Дотонбори и Синсайбаси",
+          "type": "food",
+          "durationMinutes": 180,
+          "priority": "high",
+          "estimatedCost": 5000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dotonbori",
+          "details": "Возвращение в Намбу. Ужин и прогулка по Дотонбори, Синсайбаси, Hozenji Yokocho.",
+          "tags": ["food", "viewpoint", "shopping"],
+          "status": "planned"
         }
-    ],
-    "links": [
+      ]
+    },
+    {
+      "date": "13-11-2026",
+      "city": "Осака",
+      "startLocation": "APA Hotel Namba Ekihigashi",
+      "endLocation": "APA Hotel Namba Ekihigashi",
+      "schedule": [],
+      "variants": [
         {
-            "title": "Ghibli Museum",
-            "url": "https://www.ghibli-museum.jp/en/"
+          "id": "a-usj",
+          "label": "A — USJ (The Wizarding World of Harry Potter)",
+          "description": "Целый день в Universal Studios Japan, главная цель — зона Harry Potter.",
+          "recommended": false,
+          "schedule": [
+            {
+              "time": "07:00",
+              "description": "Выезд в Universal Studios Japan",
+              "type": "transport",
+              "durationMinutes": 60,
+              "priority": "must",
+              "estimatedCost": 800,
+              "details": "От Namba: линия Hanshin до Nishikujo, пересадка на JR Yumesaki Line до Universal City."
+            },
+            {
+              "time": "08:30",
+              "description": "Universal Studios Japan — The Wizarding World of Harry Potter",
+              "type": "themepark",
+              "durationMinutes": 540,
+              "priority": "must",
+              "reservationRequired": false,
+              "estimatedCost": 16000,
+              "details": "Главная цель — Hogsmeade и замок. Express Pass необязателен, если аттракционы не приоритетны. Заранее установить приложение USJ: для зоны Гарри Поттера иногда используется временной допуск.",
+              "tags": ["themepark", "harrypotter"]
+            }
+          ]
         },
         {
-            "title": "Japan Guide",
-            "url": "https://www.japan-guide.com/"
-        },
-        {
-            "title": "HyperDia — расписание поездов",
-            "url": "https://www.hyperdia.com/"
-        },
-        {
-            "title": "Narita Airport",
-            "url": "https://www.narita-airport.jp/en/"
-        },
-        {
-            "title": "Kansai Airport",
-            "url": "https://www.kansai-airport.or.jp/en/"
-        },
-        {
-            "title": "Shibuya Sky",
-            "url": "https://www.shibuya-scramble-square.com/en/sky/"
-        },
-        {
-            "title": "Warner Bros. Studio Tour Tokyo",
-            "url": "https://www.wbstudiotour.jp/en/"
-        },
-        {
-            "title": "USJ — Universal Studios Japan",
-            "url": "https://www.usj.co.jp/web/en/us"
-        },
-        {
-            "title": "APA Hotel Namba Ekihigashi (Осака)",
-            "url": "https://www.tbank.ru/travel/hotels/new/hotels/1166774/"
-        },
-        {
-            "title": "APA Hotel Kyoto Ekikita (Киото)",
-            "url": "https://www.tbank.ru/travel/hotels/new/hotels/1167624/"
-        },
-        {
-            "title": "Kasuitei Ohya (Фудзикавагутико)",
-            "url": "https://www.tbank.ru/travel/hotels/new/hotels/1144438/"
-        },
-        {
-            "title": "APA Hotel Asakusa Tawaramachi Ekimae (Токио)",
-            "url": "https://www.tbank.ru/travel/hotels/new/hotels/1166775/"
+          "id": "b-osaka",
+          "label": "B — Осака без парка (Kuromon, Den Den Town, Shinsekai)",
+          "description": "Рынок Куромон, Den Den Town, Синсэкай, Abeno Harukas.",
+          "recommended": true,
+          "schedule": [
+            {
+              "time": "09:00",
+              "description": "Kuromon Market — завтрак и рынок",
+              "type": "food",
+              "durationMinutes": 90,
+              "priority": "high",
+              "estimatedCost": 3000,
+              "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kuromon+Market",
+              "details": "Свежие морепродукты, такояки, местные деликатесы.",
+              "tags": ["food"]
+            },
+            {
+              "time": "10:30",
+              "description": "Den Den Town — аниме и фигурки",
+              "type": "shopping",
+              "durationMinutes": 150,
+              "priority": "high",
+              "estimatedCost": 0,
+              "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Den+Den+Town+Osaka",
+              "details": "Осакский аналог Акихабары: фигурки, манга, ретро-игры. Магазины Surugaya, Mandarake и небольшие комиссионные магазины.",
+              "tags": ["anime", "shopping", "collectibles"]
+            },
+            {
+              "time": "13:00",
+              "description": "Синсэкай, башня Цутэнкаку и обед с кусикацу",
+              "type": "food",
+              "durationMinutes": 120,
+              "priority": "medium",
+              "estimatedCost": 3000,
+              "details": "Пешком в район Синсэкай, к башне Цутэнкаку. Обед с кусикацу.",
+              "tags": ["food", "viewpoint"]
+            },
+            {
+              "time": "15:30",
+              "description": "Abeno Harukas / дополнительный шопинг в Намбе",
+              "type": "shopping",
+              "durationMinutes": 150,
+              "priority": "medium",
+              "estimatedCost": 2000,
+              "details": "Опционально: смотровая площадка Abeno Harukas. Либо дополнительный шопинг в Намбе.",
+              "tags": ["viewpoint", "shopping"]
+            },
+            {
+              "time": "19:00",
+              "description": "Вечер в Дотонбори",
+              "type": "food",
+              "durationMinutes": 120,
+              "priority": "medium",
+              "estimatedCost": 4000,
+              "details": "Ужин и вечерняя прогулка.",
+              "tags": ["food"]
+            }
+          ]
         }
+      ]
+    },
+    {
+      "date": "14-11-2026",
+      "city": "Осака → Киото",
+      "startLocation": "APA Hotel Namba Ekihigashi",
+      "endLocation": "APA Hotel Kyoto Ekikita",
+      "schedule": [
+        {
+          "time": "08:30",
+          "description": "Выселение из отеля и переезд в Киото",
+          "type": "transport",
+          "durationMinutes": 60,
+          "priority": "must",
+          "estimatedCost": 1400,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shin-Osaka+Station",
+          "details": "Метро Midosuji Line: Namba → Shin-Osaka. Затем JR Special Rapid: Shin-Osaka → Kyoto. Общая продолжительность ~50–60 минут.",
+          "tags": ["train", "transfer"],
+          "status": "planned"
+        },
+        {
+          "time": "09:45",
+          "description": "Оставить багаж в APA Hotel Kyoto Ekikita",
+          "type": "hotel",
+          "durationMinutes": 30,
+          "priority": "must",
+          "estimatedCost": 0,
+          "details": "Заселение позже — сначала сдать вещи и сразу на маршрут.",
+          "status": "planned"
+        },
+        {
+          "time": "10:30",
+          "description": "Замок Нидзё",
+          "type": "viewpoint",
+          "durationMinutes": 90,
+          "priority": "high",
+          "estimatedCost": 1000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nijo+Castle",
+          "details": "Метро до станции Nijojo-mae. Посещение замка Нидзё.",
+          "tags": ["history", "culture"],
+          "status": "planned"
+        },
+        {
+          "time": "12:30",
+          "description": "Рынок Нисики",
+          "type": "food",
+          "durationMinutes": 90,
+          "priority": "high",
+          "estimatedCost": 3000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nishiki+Market",
+          "details": "После замка — рынок Нисики. Попробовать суши, такояки и местные сладости.",
+          "tags": ["food", "shopping"],
+          "status": "planned"
+        },
+        {
+          "time": "14:30",
+          "description": "Прогулка через центр к реке Камо",
+          "type": "viewpoint",
+          "durationMinutes": 90,
+          "priority": "medium",
+          "estimatedCost": 0,
+          "details": "Пешком от Нисики через центр к реке Камо.",
+          "tags": ["nature", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "17:00",
+          "description": "Гион, Hanamikoji и Yasaka Shrine",
+          "type": "viewpoint",
+          "durationMinutes": 150,
+          "priority": "high",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yasaka+Shrine",
+          "details": "Вечерний Гион: улица Hanamikoji, храм Yasaka, вероятность увидеть гейшу. Ужин в районе.",
+          "tags": ["culture", "temple", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "20:30",
+          "description": "Заселение в APA Hotel Kyoto Ekikita",
+          "type": "hotel",
+          "durationMinutes": 30,
+          "priority": "must",
+          "estimatedCost": 0,
+          "details": "Возвращение к Kyoto Station, заселение.",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "15-11-2026",
+      "city": "Киото",
+      "startLocation": "APA Hotel Kyoto Ekikita",
+      "endLocation": "APA Hotel Kyoto Ekikita",
+      "schedule": [
+        {
+          "time": "07:30",
+          "description": "Арасияма — бамбуковая роща, храм Тэнрю-дзи, мост Тогэцукё",
+          "type": "temple",
+          "durationMinutes": 240,
+          "priority": "high",
+          "estimatedCost": 1000,
+          "photos": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Arashiyama_Bamboo_Grove_2016.jpg/960px-Arashiyama_Bamboo_Grove_2016.jpg",
+              "caption": "Бамбуковая роща в Арасияме"
+            }
+          ],
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Arashiyama+Bamboo+Grove",
+          "details": "Ранний выезд JR Sagano Line до Saga-Arashiyama. До основной толпы: бамбуковая роща, Tenryu-ji, мост Togetsukyo. При хорошей погоде — прогулка вдоль реки.",
+          "weatherDependent": true,
+          "tags": ["nature", "temple", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "12:30",
+          "description": "Обед в Арасияме",
+          "type": "food",
+          "durationMinutes": 60,
+          "priority": "medium",
+          "estimatedCost": 2000,
+          "details": "Перекус в районе Арасиямы.",
+          "status": "planned"
+        },
+        {
+          "time": "14:00",
+          "description": "Кинкаку-дзи — Золотой павильон",
+          "type": "temple",
+          "durationMinutes": 90,
+          "priority": "medium",
+          "estimatedCost": 500,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kinkaku-ji",
+          "details": "Переезд к Золотому павильону. Если устанете — можно пропустить и провести больше времени в Арасияме.",
+          "tags": ["temple", "culture", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "17:00",
+          "description": "Свободный вечер около Kyoto Station",
+          "type": "food",
+          "durationMinutes": 180,
+          "priority": "low",
+          "estimatedCost": 3000,
+          "details": "Возвращение в центр, ужин и прогулка у вокзала.",
+          "tags": ["food"],
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "16-11-2026",
+      "city": "Киото",
+      "startLocation": "APA Hotel Kyoto Ekikita",
+      "endLocation": "APA Hotel Kyoto Ekikita",
+      "schedule": [
+        {
+          "time": "07:00",
+          "description": "Фусими Инари — красные ворота",
+          "type": "temple",
+          "durationMinutes": 150,
+          "priority": "must",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fushimi+Inari+Taisha",
+          "details": "Выход ~07:00. JR Nara Line: Kyoto Station → Inari. Подняться хотя бы до смотровой площадки, полный подъём на вершину необязателен. Утром ворота намного красивее и меньше людей.",
+          "tags": ["culture", "temple", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "10:00",
+          "description": "Храм Тофуку-дзи",
+          "type": "temple",
+          "durationMinutes": 90,
+          "priority": "high",
+          "estimatedCost": 500,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tofuku-ji",
+          "details": "Особенно красив во время осенней листвы.",
+          "tags": ["temple", "nature", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "12:00",
+          "description": "Киёмидзу-дэра",
+          "type": "temple",
+          "durationMinutes": 90,
+          "priority": "high",
+          "estimatedCost": 400,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kiyomizu-dera",
+          "details": "Смотровая площадка и территория храма.",
+          "tags": ["temple", "viewpoint", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "14:00",
+          "description": "Прогулка: Sannenzaka, Ninenzaka, Yasaka Pagoda, Maruyama Park, Гион",
+          "type": "viewpoint",
+          "durationMinutes": 180,
+          "priority": "high",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sannenzaka+Kyoto",
+          "details": "Пеший маршрут по старому Киото: Sannenzaka, Ninenzaka, Yasaka Pagoda, Maruyama Park, выход в Гион. Попутный перекус и фото.",
+          "tags": ["culture", "photo", "shopping"],
+          "status": "planned"
+        },
+        {
+          "time": "18:00",
+          "description": "Ужин и возвращение в отель",
+          "type": "food",
+          "durationMinutes": 120,
+          "priority": "medium",
+          "estimatedCost": 4000,
+          "details": "Ужин в районе Гион или у станции.",
+          "tags": ["food"],
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "17-11-2026",
+      "city": "Киото → Нара → Киото",
+      "startLocation": "APA Hotel Kyoto Ekikita",
+      "endLocation": "APA Hotel Kyoto Ekikita",
+      "schedule": [
+        {
+          "time": "08:00",
+          "description": "Поезд Kintetsu до Kintetsu-Nara",
+          "type": "transport",
+          "durationMinutes": 55,
+          "priority": "must",
+          "estimatedCost": 1200,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kintetsu-Nara+Station",
+          "details": "От Kyoto Station поезд Kintetsu до Kintetsu-Nara (~45–55 минут). Эта станция ближе к парку, чем JR Nara. В этот день или утром отправить большой чемодан службой доставки из Киото в токийский отель — в Кавагутико взять только рюкзак на одну ночь.",
+          "tags": ["train", "transfer"],
+          "status": "planned"
+        },
+        {
+          "time": "09:00",
+          "description": "Парк Нара и олени",
+          "type": "viewpoint",
+          "durationMinutes": 60,
+          "priority": "high",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nara+Park",
+          "details": "Прогулка по парку, кормление оленей.",
+          "tags": ["nature", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "10:00",
+          "description": "Храм Тодай-дзи — Большой Будда",
+          "type": "temple",
+          "durationMinutes": 90,
+          "priority": "must",
+          "estimatedCost": 600,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Todai-ji",
+          "details": "Главный храм с Большим Буддой. Один из самых впечатляющих объектов всей поездки.",
+          "tags": ["temple", "culture", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "11:30",
+          "description": "Nigatsudo — обзорная площадка",
+          "type": "viewpoint",
+          "durationMinutes": 30,
+          "priority": "medium",
+          "estimatedCost": 0,
+          "details": "Хорошая обзорная площадка с видом на парк и город.",
+          "tags": ["viewpoint", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "12:30",
+          "description": "Kasuga Taisha",
+          "type": "temple",
+          "durationMinutes": 60,
+          "priority": "high",
+          "estimatedCost": 500,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kasuga+Taisha",
+          "details": "Аллеи к святилищу с каменными фонарями.",
+          "tags": ["temple", "culture"],
+          "status": "planned"
+        },
+        {
+          "time": "14:00",
+          "description": "Обед и Naramachi",
+          "type": "food",
+          "durationMinutes": 120,
+          "priority": "medium",
+          "estimatedCost": 3000,
+          "details": "Обед и по возможности — прогулка по району Naramachi.",
+          "tags": ["food"],
+          "status": "planned"
+        },
+        {
+          "time": "17:00",
+          "description": "Возвращение в Киото",
+          "type": "transport",
+          "durationMinutes": 55,
+          "priority": "must",
+          "estimatedCost": 1200,
+          "details": "Поезд обратно до Kyoto Station. Отправить багаж в Токио службой доставки.",
+          "tags": ["train"],
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "18-11-2026",
+      "city": "Киото → Кавагутико",
+      "startLocation": "APA Hotel Kyoto Ekikita",
+      "endLocation": "Kasuitei Ohya",
+      "schedule": [
+        {
+          "time": "07:00",
+          "description": "Выселение и синкансэн Kyoto → Mishima",
+          "type": "transport",
+          "durationMinutes": 150,
+          "priority": "must",
+          "estimatedCost": 13000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mishima+Station",
+          "details": "Раннее выселение. Tokaido Shinkansen: Kyoto → Mishima. Лучше выбрать прямой Hikari, если будет в расписании.",
+          "tags": ["train", "transfer"],
+          "status": "planned"
+        },
+        {
+          "time": "10:00",
+          "description": "Автобус Mishima → Kawaguchiko",
+          "type": "transport",
+          "durationMinutes": 120,
+          "priority": "must",
+          "reservationRequired": true,
+          "estimatedCost": 2500,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kawaguchiko+Station",
+          "details": "От южного выхода Mishima Station автобус до Kawaguchiko Station. Бронировать заранее. Общая дорога с пересадкой ~4–5 часов.",
+          "tags": ["bus", "transfer"],
+          "status": "planned"
+        },
+        {
+          "time": "13:00",
+          "description": "Прибытие в Кавагутико, заселение в Kasuitei Ohya",
+          "type": "hotel",
+          "durationMinutes": 30,
+          "priority": "must",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kasuitei+Ohya+Kawaguchiko",
+          "details": "Прибытие ~13:00–14:00. Номер в японском стиле с персональным онсеном и видом на Фудзи. Завтрак и ужин включены в стоимость."
+        },
+        {
+          "time": "14:00",
+          "description": "Велосипедная прогулка — южный берег озера",
+          "type": "viewpoint",
+          "durationMinutes": 210,
+          "priority": "high",
+          "estimatedCost": 1500,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchi",
+          "details": "Взять велосипед, если позволяет время и погода. Проехать часть южного берега, мост Kawaguchiko Ohashi. В ноябре темнеет рано — полный круг лучше оставить на утро.",
+          "weatherDependent": true,
+          "tags": ["nature", "fuji", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "17:30",
+          "description": "Закат у озера и заселение",
+          "type": "viewpoint",
+          "durationMinutes": 60,
+          "priority": "high",
+          "estimatedCost": 0,
+          "details": "Встретить закат у озера, заселиться и отдыхать.",
+          "tags": ["nature", "photo"],
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "19-11-2026",
+      "city": "Кавагутико → Токио",
+      "startLocation": "Kasuitei Ohya",
+      "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "schedule": [
+        {
+          "time": "06:30",
+          "description": "Велосипедная прогулка вокруг озера",
+          "type": "viewpoint",
+          "durationMinutes": 240,
+          "priority": "must",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchi",
+          "details": "Ранний подъём: утром Фудзи обычно видна лучше. Полный круг вокруг озера — около 20 км, ~3–4 часа с фотографиями. Самые красивые виды с северного берега. Выселиться заранее, вещи оставить в отеле.",
+          "weatherDependent": true,
+          "tags": ["nature", "fuji", "photo", "cycling"],
+          "status": "planned"
+        },
+        {
+          "time": "12:00",
+          "description": "Возвращение за вещами и обед",
+          "type": "food",
+          "durationMinutes": 60,
+          "priority": "medium",
+          "estimatedCost": 2000,
+          "details": "Забрать вещи из отеля, перекусить перед отправлением.",
+          "status": "planned"
+        },
+        {
+          "time": "13:30",
+          "description": "Автобус Kawaguchiko → Shinjuku",
+          "type": "transport",
+          "durationMinutes": 150,
+          "priority": "must",
+          "reservationRequired": true,
+          "estimatedCost": 2200,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Station",
+          "details": "Желательно забронировать заранее. Прибытие в Shinjuku.",
+          "tags": ["bus", "transfer"],
+          "status": "planned"
+        },
+        {
+          "time": "16:30",
+          "description": "Заселение в APA Hotel Asakusa Tawaramachi Ekimae",
+          "type": "hotel",
+          "durationMinutes": 45,
+          "priority": "must",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=APA+Hotel+Asakusa+Tawaramachi+Ekimae",
+          "details": "Из Shinjuku — метро до станции Tawaramachi. Заселение. Большой чемодан должен прибыть службой доставки из Киото.",
+          "status": "planned"
+        },
+        {
+          "time": "18:00",
+          "description": "Храм Сэнсо-дзи и Накамисэ",
+          "type": "temple",
+          "durationMinutes": 120,
+          "priority": "high",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Senso-ji",
+          "details": "Вечерняя прогулка: храм Сэнсо-дзи, улица Накамисэ, вид на Tokyo Skytree через реку.",
+          "tags": ["culture", "temple"],
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "20-11-2026",
+      "city": "Токио",
+      "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "schedule": [
+        {
+          "time": "08:30",
+          "description": "Музей Гибли в Митаке",
+          "type": "museum",
+          "durationMinutes": 180,
+          "priority": "must",
+          "reservationRequired": true,
+          "estimatedCost": 1000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ghibli+Museum+Mitaka",
+          "details": "Метро и JR до станции Mitaka. Бронировать строго заранее. Время зависит от билета — если билет на другую дату, токийские дни можно переставить.",
+          "tags": ["culture", "art"],
+          "status": "planned"
+        },
+        {
+          "time": "12:00",
+          "description": "Парк Инокасира и обед в Kichijoji",
+          "type": "food",
+          "durationMinutes": 90,
+          "priority": "medium",
+          "estimatedCost": 3000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kichijoji",
+          "details": "После музея пройти через парк Инокасира до Kichijoji. Обед.",
+          "tags": ["food", "nature"],
+          "status": "planned"
+        },
+        {
+          "time": "14:00",
+          "description": "Nakano Broadway — манга, фигурки, винил",
+          "type": "shopping",
+          "durationMinutes": 150,
+          "priority": "high",
+          "estimatedCost": 8000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nakano+Broadway",
+          "details": "JR Chuo Line до Nakano. Mandarake, старые фигурки, аниме-товары, коллекционные издания, винил и японские саундтреки.",
+          "tags": ["anime", "collectibles", "vinyl", "shopping"],
+          "status": "planned"
+        },
+        {
+          "time": "17:00",
+          "description": "Okadaya Shinjuku — товары для вязания",
+          "type": "shopping",
+          "durationMinutes": 90,
+          "priority": "high",
+          "estimatedCost": 5000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Okadaya+Shinjuku",
+          "details": "Для жены: пряжа, спицы, ткани, японские принадлежности для рукоделия.",
+          "tags": ["wife", "knitting", "shopping"],
+          "status": "planned"
+        },
+        {
+          "time": "19:30",
+          "description": "Возвращение в отель",
+          "type": "transport",
+          "durationMinutes": 30,
+          "priority": "medium",
+          "estimatedCost": 0,
+          "details": "Метро до Tawaramachi.",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "21-11-2026",
+      "city": "Токио",
+      "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "schedule": [
+        {
+          "time": "09:00",
+          "description": "Янака — кладбище, Yanaka Ginza, кошачьи магазины",
+          "type": "viewpoint",
+          "durationMinutes": 120,
+          "priority": "high",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yanaka+Ginza",
+          "details": "Доехать до станции Nippori. Прогуляться по Yanaka Cemetery, Yanaka Ginza, небольшим магазинам с кошачьей тематикой.",
+          "tags": ["culture", "shopping"],
+          "status": "planned"
+        },
+        {
+          "time": "11:30",
+          "description": "Акихабара — Radio Kaikan, AmiAmi, Mandarake, Surugaya, Lashinbang",
+          "type": "shopping",
+          "durationMinutes": 180,
+          "priority": "must",
+          "estimatedCost": 10000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Akihabara",
+          "details": "JR до Akihabara. Основные магазины: Radio Kaikan, AmiAmi, Mandarake, Surugaya, Lashinbang. Для недорогих фигурок сначала смотреть подержанные товары в Mandarake, Surugaya и Lashinbang. Состояние обычно подробно указано.",
+          "tags": ["anime", "shopping", "collectibles"],
+          "status": "planned"
+        },
+        {
+          "time": "15:30",
+          "description": "Отяномидзу — мост Hijiribashi",
+          "type": "viewpoint",
+          "durationMinutes": 45,
+          "priority": "medium",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hijiribashi+Tokyo",
+          "details": "Пешком или одну станцию до Ochanomizu. Встать на мосту Hijiribashi — здесь видно пересечение железнодорожных линий и метро.",
+          "tags": ["viewpoint", "photo", "train"],
+          "status": "planned"
+        },
+        {
+          "time": "16:30",
+          "description": "Tokyo Station — Character Street, Jump Shop, KITTE Garden",
+          "type": "shopping",
+          "durationMinutes": 150,
+          "priority": "high",
+          "estimatedCost": 5000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo+Station",
+          "details": "JR до Tokyo Station. Исторический фасад станции, Character Street, Jump Shop (Naruto, Bleach, Jujutsu Kaisen, Chainsaw Man и др.). Перейти в KITTE Marunouchi, подняться в сад на крыше — отличный вид на Tokyo Station.",
+          "tags": ["anime", "shopping", "viewpoint", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "19:30",
+          "description": "Возвращение в отель",
+          "type": "transport",
+          "durationMinutes": 30,
+          "priority": "low",
+          "estimatedCost": 0,
+          "details": "Метро до Tawaramachi.",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "22-11-2026",
+      "city": "Токио",
+      "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "schedule": [
+        {
+          "time": "08:30",
+          "description": "Gotokuji — храм манэки-нэко",
+          "type": "temple",
+          "durationMinutes": 60,
+          "priority": "high",
+          "estimatedCost": 0,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gotokuji",
+          "details": "Храм с большим количеством манэки-нэко (кошек удачи). Утреннее посещение.",
+          "tags": ["temple", "culture", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "10:30",
+          "description": "Харадзюку: @cosme TOKYO, Такэсита, Омотэсандо, Мэйдзи Дзингу",
+          "type": "shopping",
+          "durationMinutes": 180,
+          "priority": "high",
+          "estimatedCost": 8000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Harajuku",
+          "details": "Переезд в Харадзюку. @cosme TOKYO для японской косметики. При желании: Meiji Jingu, Takeshita Street, Omotesando.",
+          "tags": ["wife", "shopping", "cosmetics", "temple"],
+          "status": "planned"
+        },
+        {
+          "time": "14:00",
+          "description": "Сибуя: Tower Records, Shibuya PARCO, Mega Don Quijote",
+          "type": "shopping",
+          "durationMinutes": 180,
+          "priority": "must",
+          "estimatedCost": 10000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shibuya+Station",
+          "details": "Tower Records Shibuya — большой выбор винила и японской музыки. Shibuya PARCO: Jump Shop, Nintendo Tokyo, Pokémon Center, временные аниме-магазины. Перекрёсток Shibuya Crossing. Mega Don Quijote Shibuya — косметика, сладости и сувениры.",
+          "tags": ["music", "vinyl", "anime", "shopping"],
+          "status": "planned"
+        },
+        {
+          "time": "17:30",
+          "description": "Shibuya Sky на закате",
+          "type": "viewpoint",
+          "durationMinutes": 90,
+          "priority": "must",
+          "reservationRequired": true,
+          "estimatedCost": 2000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shibuya+Sky",
+          "details": "Необходим билет на определённое время. Лучше выбрать закатное время.",
+          "tags": ["viewpoint", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "19:30",
+          "description": "Ужин в Сибуе",
+          "type": "food",
+          "durationMinutes": 90,
+          "priority": "medium",
+          "estimatedCost": 4000,
+          "details": "Ужин в Сибуе, затем возвращение в отель.",
+          "tags": ["food"],
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "23-11-2026",
+      "city": "Токио",
+      "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "schedule": [
+        {
+          "time": "09:00",
+          "description": "Одайба: Yurikamome, набережная, Gundam, DiverCity",
+          "type": "viewpoint",
+          "durationMinutes": 240,
+          "priority": "high",
+          "estimatedCost": 1000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Odaiba",
+          "details": "Метро до Shimbashi, пересадка на Yurikamome (автоматический поезд с видами на Rainbow Bridge). Набережная, статуя Gundam у DiverCity, торговый центр. При желании — музей Miraikan.",
+          "tags": ["viewpoint", "shopping", "photo"],
+          "status": "planned"
+        },
+        {
+          "time": "14:00",
+          "description": "Гиндза: UNIQLO, GU, Muji, Mitsukoshi, Matsuya",
+          "type": "shopping",
+          "durationMinutes": 240,
+          "priority": "high",
+          "estimatedCost": 15000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginza",
+          "details": "После обеда возвращение в центр. UNIQLO Ginza — крупный флагманский магазин. Дополнительно: GU, Muji, магазины косметики, универмаги Mitsukoshi и Matsuya.",
+          "tags": ["shopping", "wife"],
+          "status": "planned"
+        },
+        {
+          "time": "19:00",
+          "description": "Возвращение в Асакусу",
+          "type": "transport",
+          "durationMinutes": 30,
+          "priority": "medium",
+          "estimatedCost": 0,
+          "details": "Вечернее возвращение. Японский государственный праздник — людей будет больше.",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "24-11-2026",
+      "city": "Токио",
+      "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "schedule": [],
+      "variants": [
+        {
+          "id": "a-hp-ikebukuro",
+          "label": "A — Музей Гарри Поттера + Икэбукуро",
+          "description": "Warner Bros. Studio Tour Tokyo (The Making of Harry Potter) и Икэбукуро после музея.",
+          "recommended": false,
+          "schedule": [
+            {
+              "time": "09:00",
+              "description": "Warner Bros. Studio Tour Tokyo — The Making of Harry Potter",
+              "type": "museum",
+              "durationMinutes": 240,
+              "priority": "must",
+              "reservationRequired": true,
+              "estimatedCost": 8000,
+              "details": "Метро до станции Toshimaen. Заложить около 4 часов. Билет покупать заранее на конкретное время.",
+              "tags": ["museum", "harrypotter"]
+            },
+            {
+              "time": "14:00",
+              "description": "Икэбукуро — Animate, Sunshine City, Pokémon Center",
+              "type": "shopping",
+              "durationMinutes": 180,
+              "priority": "high",
+              "estimatedCost": 5000,
+              "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ikebukuro",
+              "details": "Поезд до Ikebukuro. Animate Ikebukuro, Sunshine City, Pokémon Center, магазины фигурок и манги.",
+              "tags": ["anime", "shopping"]
+            }
+          ]
+        },
+        {
+          "id": "b-kamakura",
+          "label": "B — Камакура (однодневная поездка)",
+          "description": "Большой Будда, Хасэ-дэра, Комати-дори, храм Цуругаока Хатимангу.",
+          "recommended": true,
+          "schedule": [
+            {
+              "time": "08:00",
+              "description": "Поезд JR Yokosuka Line до Kamakura",
+              "type": "transport",
+              "durationMinutes": 60,
+              "priority": "must",
+              "estimatedCost": 1500,
+              "details": "Около часа от центра Токио."
+            },
+            {
+              "time": "09:30",
+              "description": "Котоку-ин — Большой Будда",
+              "type": "temple",
+              "durationMinutes": 60,
+              "priority": "high",
+              "estimatedCost": 300,
+              "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kotoku-in+Kamakura",
+              "details": "Местный поезд Enoden до Hase. Большой Будда Котоку-ин.",
+              "tags": ["temple", "culture", "photo"]
+            },
+            {
+              "time": "10:30",
+              "description": "Храм Хасэ-дэра",
+              "type": "temple",
+              "durationMinutes": 60,
+              "priority": "high",
+              "estimatedCost": 400,
+              "details": "Красивый храм с видом на море."
+            },
+            {
+              "time": "12:00",
+              "description": "Komachi-dori — обед и шопинг",
+              "type": "food",
+              "durationMinutes": 90,
+              "priority": "medium",
+              "estimatedCost": 3000,
+              "details": "Обед на главной торговой улице."
+            },
+            {
+              "time": "13:30",
+              "description": "Храм Цуругаока Хатимангу",
+              "type": "temple",
+              "durationMinutes": 60,
+              "priority": "medium",
+              "estimatedCost": 0,
+              "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tsurugaoka+Hachimangu",
+              "details": "Главный храм Камакуры в центре города.",
+              "tags": ["temple", "culture"]
+            },
+            {
+              "time": "16:00",
+              "description": "Поезд обратно в Токио",
+              "type": "transport",
+              "durationMinutes": 60,
+              "priority": "must",
+              "estimatedCost": 1500,
+              "details": "Возвращение вечером."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "25-11-2026",
+      "city": "Токио → Нарита → Москва",
+      "startLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
+      "endLocation": "Narita Airport",
+      "schedule": [
+        {
+          "time": "08:00",
+          "description": "Завтрак, выселение, последняя прогулка по Асакусе",
+          "type": "hotel",
+          "durationMinutes": 180,
+          "priority": "must",
+          "estimatedCost": 0,
+          "details": "До 11:00 можно ещё раз прогуляться по Асакусе или купить последние сувениры.",
+          "tags": ["shopping"],
+          "status": "planned"
+        },
+        {
+          "time": "11:45",
+          "description": "Выезд из отеля: метро Tawaramachi → Ueno, Keisei Skyliner до Нариты",
+          "type": "transport",
+          "durationMinutes": 90,
+          "priority": "must",
+          "estimatedCost": 3000,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Keisei-Ueno+Station",
+          "details": "Метро Ginza Line: Tawaramachi → Ueno. Пешком до Keisei-Ueno. Keisei Skyliner до нужного терминала Narita Airport. Прибытие в аэропорт ориентировочно в 13:15–13:40.",
+          "tags": ["train"],
+          "status": "planned"
+        },
+        {
+          "time": "16:55",
+          "description": "Вылет из Нариты",
+          "type": "transport",
+          "durationMinutes": 600,
+          "priority": "must",
+          "reservationRequired": true,
+          "estimatedCost": 0,
+          "details": "Пересадка в Дохе — 2 часа 20 минут.",
+          "tags": ["flight"],
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "26-11-2026",
+      "city": "Москва",
+      "startLocation": "Doha Airport",
+      "endLocation": "Sheremetyevo Airport",
+      "schedule": [
+        {
+          "time": "07:00",
+          "description": "Прибытие в Шереметьево",
+          "type": "transport",
+          "durationMinutes": 0,
+          "priority": "must",
+          "estimatedCost": 0,
+          "details": "Пересадка в Дохе — 2 часа 20 минут. Паспортный контроль и получение багажа. Конец поездки.",
+          "tags": ["flight"],
+          "status": "planned"
+        }
+      ]
+    }
+  ],
+  "budget": {
+    "totalLimit": 450000,
+    "items": [
+      {
+        "category": "Авиабилеты",
+        "planned": 147000,
+        "actual": 147000,
+        "comment": "Уже куплены"
+      },
+      {
+        "category": "Отели",
+        "planned": 172810,
+        "actual": 172810,
+        "comment": "Осака 21 500, Киото 47 000, Кавагутико 38 000, Токио 66 310"
+      },
+      {
+        "category": "Питание",
+        "planned": 80000,
+        "actual": 0
+      },
+      {
+        "category": "Транспорт по Японии",
+        "planned": 40000,
+        "actual": 0,
+        "comment": "Синкансэн, автобусы, метро"
+      },
+      {
+        "category": "Входные билеты",
+        "planned": 15000,
+        "actual": 0,
+        "comment": "Без USJ и музея Гарри Поттера"
+      },
+      {
+        "category": "USJ (доплата)",
+        "planned": 14000,
+        "actual": 0,
+        "comment": "Если выбран вариант А на 13 ноября"
+      },
+      {
+        "category": "Музей Гарри Поттера (доплата)",
+        "planned": 10000,
+        "actual": 0,
+        "comment": "Если выбран вариант А на 24 ноября"
+      },
+      {
+        "category": "Доставка багажа",
+        "planned": 5000,
+        "actual": 0
+      },
+      {
+        "category": "Покупки и сувениры",
+        "planned": 30000,
+        "actual": 0,
+        "comment": "Запасные 500€ при необходимости"
+      }
     ]
+  },
+  "payments": [
+    {
+      "description": "Авиабилеты Москва–Осака и Токио–Москва",
+      "amount": 147000,
+      "status": "paid"
+    },
+    {
+      "description": "APA Hotel Namba Ekihigashi (Осака, 11–14 ноября)",
+      "amount": 21500,
+      "status": "paid",
+      "link": "https://www.tbank.ru/travel/hotels/new/hotels/1166774/"
+    },
+    {
+      "description": "APA Hotel Kyoto Ekikita (Киото, 14–18 ноября)",
+      "amount": 47000,
+      "status": "paid",
+      "link": "https://www.tbank.ru/travel/hotels/new/hotels/1167624/"
+    },
+    {
+      "description": "Kasuitei Ohya (Фудзикавагутико, 18–19 ноября)",
+      "amount": 38000,
+      "status": "paid",
+      "link": "https://www.tbank.ru/travel/hotels/new/hotels/1144438/"
+    },
+    {
+      "description": "APA Hotel Asakusa Tawaramachi Ekimae (Токио, 19–25 ноября)",
+      "amount": 66310,
+      "status": "paid",
+      "link": "https://www.tbank.ru/travel/hotels/new/hotels/1166775/"
+    },
+    {
+      "description": "Синкансэн Kyoto → Mishima и автобус до Кавагутико",
+      "amount": 0,
+      "status": "planned"
+    },
+    {
+      "description": "Автобус Кавагутико → Shinjuku",
+      "amount": 0,
+      "status": "planned"
+    }
+  ],
+  "shopping": {
+    "limit": 55000,
+    "items": [
+      {
+        "name": "Винил (Tower Records / Nakano)",
+        "estimatedPrice": 15000,
+        "actualPrice": 0,
+        "purchased": false
+      },
+      {
+        "name": "Косметика (@cosme, Don Quijote)",
+        "estimatedPrice": 10000,
+        "actualPrice": 0,
+        "purchased": false
+      },
+      {
+        "name": "Фигурки и аниме-товары (Akihabara, Nakano)",
+        "estimatedPrice": 15000,
+        "actualPrice": 0,
+        "purchased": false
+      },
+      {
+        "name": "Пряжа и товары для вязания (Okadaya)",
+        "estimatedPrice": 5000,
+        "actualPrice": 0,
+        "purchased": false
+      },
+      {
+        "name": "Сувениры (манэки-нэко, омамори, сладости)",
+        "estimatedPrice": 5000,
+        "actualPrice": 0,
+        "purchased": false
+      },
+      {
+        "name": "Одежда (UNIQLO Ginza, GU)",
+        "estimatedPrice": 5000,
+        "actualPrice": 0,
+        "purchased": false
+      }
+    ]
+  },
+  "souvenirTips": [
+    "Akihabara и Nakano Broadway — лучшие точки для аниме, фигурок и коллекционных изданий. Смотреть подержанные товары в Mandarake, Surugaya и Lashinbang.",
+    "Okadaya Shinjuku — пряжа, спицы, ткани и японские принадлежности для рукоделия.",
+    "Tower Records Shibuya — большой выбор винила и японской музыки.",
+    "Don Quijote и Mega Don Quijote Shibuya — косметика, сладости, сувениры в одном месте.",
+    "Gotokuji — уникальные манэки-нэко (кошки удачи), отличный сувенир.",
+    "Tokyo Station Character Street и Jump Shop — товары по Naruto, Bleach, Jujutsu Kaisen, Chainsaw Man.",
+    "Nishiki Market в Киото — специи, местные сладости и кулинарные сувениры."
+  ],
+  "checklist": [
+    {
+      "task": "Обновить даты отелей (Осака 11–14, Киото 14–18, Кавагутико 18–19, Токио 19–25)",
+      "done": true
+    },
+    {
+      "task": "Купить билеты в музей Гибли (нужна конкретная дата и время)",
+      "done": false
+    },
+    {
+      "task": "Забронировать автобус Mishima → Kawaguchiko (18 ноября)",
+      "done": false
+    },
+    {
+      "task": "Забронировать автобус Kawaguchiko → Shinjuku (19 ноября)",
+      "done": false
+    },
+    {
+      "task": "Купить билеты на Shibuya Sky (закатное время, 22 ноября)",
+      "done": false
+    },
+    {
+      "task": "Купить билеты в USJ (если выбран вариант А на 13 ноября)",
+      "done": false
+    },
+    {
+      "task": "Купить билеты в музей Гарри Поттера (если выбран вариант А на 24 ноября)",
+      "done": false
+    },
+    {
+      "task": "Оформить доставку багажа из Киото в Токио (утром 17 или 18 ноября)",
+      "done": false
+    },
+    {
+      "task": "Проверить визовые требования для транзита в Шанхае",
+      "done": false
+    }
+  ],
+  "links": [
+    {
+      "title": "Ghibli Museum",
+      "url": "https://www.ghibli-museum.jp/en/"
+    },
+    {
+      "title": "Japan Guide",
+      "url": "https://www.japan-guide.com/"
+    },
+    {
+      "title": "HyperDia — расписание поездов",
+      "url": "https://www.hyperdia.com/"
+    },
+    {
+      "title": "Narita Airport",
+      "url": "https://www.narita-airport.jp/en/"
+    },
+    {
+      "title": "Kansai Airport",
+      "url": "https://www.kansai-airport.or.jp/en/"
+    },
+    {
+      "title": "Shibuya Sky",
+      "url": "https://www.shibuya-scramble-square.com/en/sky/"
+    },
+    {
+      "title": "Warner Bros. Studio Tour Tokyo",
+      "url": "https://www.wbstudiotour.jp/en/"
+    },
+    {
+      "title": "USJ — Universal Studios Japan",
+      "url": "https://www.usj.co.jp/web/en/us"
+    },
+    {
+      "title": "APA Hotel Namba Ekihigashi (Осака)",
+      "url": "https://www.tbank.ru/travel/hotels/new/hotels/1166774/"
+    },
+    {
+      "title": "APA Hotel Kyoto Ekikita (Киото)",
+      "url": "https://www.tbank.ru/travel/hotels/new/hotels/1167624/"
+    },
+    {
+      "title": "Kasuitei Ohya (Фудзикавагутико)",
+      "url": "https://www.tbank.ru/travel/hotels/new/hotels/1144438/"
+    },
+    {
+      "title": "APA Hotel Asakusa Tawaramachi Ekimae (Токио)",
+      "url": "https://www.tbank.ru/travel/hotels/new/hotels/1166775/"
+    }
+  ]
 }
