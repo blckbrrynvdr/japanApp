@@ -59,7 +59,7 @@ export class DayCardComponent implements OnInit {
   }
 
   protected get variantIds(): (string | null)[] {
-    return [null, ...(this.day?.variants?.map(v => v.id) ?? [])];
+    return [...(this.day?.variants?.map(v => v.id) ?? [])];
   }
 
   protected get variantLabels(): string[] {
