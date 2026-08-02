@@ -23,7 +23,7 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
+"assets": [
               {
                 "glob": "**/*",
                 "input": "public"
@@ -32,11 +32,6 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
-              },
-              {
-                "glob": "tui-icons.svg",
-                "input": "node_modules/@taiga-ui/icons",
-                "output": "assets/taiga-ui/icons"
               }
             ],
             "styles": [

@@ -71,10 +71,6 @@
             {
               "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22EGUSYc-mFQi7a1gJwfj3vK_ATIKdjIKlVKV3b6x5Q&s",
               "caption": "APA Hotel Namba Ekihigashi"
-            },
-            {
-              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22EGUSYc-mFQi7a1gJwfj3vK_ATIKdjIKlVKV3b6x5Q&s",
-              "caption": "APA Hotel Namba Ekihigashi"
             }
           ],
           "priority": "must",
@@ -92,7 +88,11 @@
           "estimatedCost": 4000,
           "photos": [
             {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dotonbori_Namba_Osaka_JP.jpg/960px-Dotonbori_Namba_Osaka_JP.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Glico_Man_sign%2C_Dotonbori.JPG/500px-Glico_Man_sign%2C_Dotonbori.JPG",
+              "caption": "Дотонбори ночью"
+            },
+            {
+              "url": "https://davailaowai.ru/wp-content/uploads/2019/11/%D0%B4%D0%BE%D1%82%D0%BE%D0%BD%D0%B1%D0%BE%D1%80%D0%B8-%D0%BD%D0%BE%D1%87%D1%8C%D1%8E-%D1%85%D1%8D%D0%BB%D0%BB%D0%BE%D1%83%D0%B8%D0%BD-%D0%BE%D1%81%D0%B0%D0%BA%D0%B0-1.jpg",
               "caption": "Дотонбори ночью"
             }
           ],
@@ -118,7 +118,7 @@
           "estimatedCost": 700,
           "photos": [
             {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Osaka_castle_2009.jpg/960px-Osaka_castle_2009.jpg",
+              "url": "https://res.cloudinary.com/jnto/image/upload/w_670,h_450,fl_lossy,f_auto/v1514375321/osaka/Osaka831_4",
               "caption": "Осакский замок"
             }
           ],
@@ -144,6 +144,16 @@
           "durationMinutes": 210,
           "priority": "high",
           "estimatedCost": 1500,
+          "photos": [
+            {
+              "url": "https://ak-d.tripcdn.com/images/1mi2i224x98fc9v17D7D0.jpg?proc=source/trip",
+              "caption": "Район Умэда"
+            },
+            {
+              "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/33/bf/1c/08/caption.jpg?w=1100&h=1100&s=1",
+              "caption": "Umeda Sky Building"
+            }
+          ],
           "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Umeda+Sky+Building",
           "details": "Поезд до станции Osaka/Umeda. Osaka Station, торговые центры, Umeda Sky Building и смотровая площадка.",
           "tags": ["viewpoint", "shopping", "photo"],
@@ -156,6 +166,16 @@
           "durationMinutes": 180,
           "priority": "high",
           "estimatedCost": 5000,
+          "photos": [
+            {
+              "url": "https://www.go-japan.ru/upload/resize_cache/webp/iblock/6f9/l74nac6twe5anh084vnkr3olwnb23j3z/dotonbori.webp",
+              "caption": "Дотонбори"
+            },
+            {
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4h6usTxPFBL0lsGOrAHZCy86aPiQa1SEiW1uZcuxh2Pa-p7C_eVav-jc&s=10",
+              "caption": "Синсайбаси"
+            }
+          ],
           "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dotonbori",
           "details": "Возвращение в Намбу. Ужин и прогулка по Дотонбори, Синсайбаси, Hozenji Yokocho.",
           "tags": ["food", "viewpoint", "shopping"],
@@ -193,6 +213,16 @@
               "priority": "must",
               "reservationRequired": false,
               "estimatedCost": 16000,
+              "photos": [
+                {
+                  "url": "https://lillagreen.com/wp-content/uploads/2019/11/Universal-Studios-Japan-Osaka-2-1024x768.jpg",
+                  "caption": "Universal Studios Japan"
+                },
+                {
+                  "url": "https://images.trvl-media.com/place/6054124/ed6ded8c-0584-4d8a-8d9c-2e72dfa09975.jpg",
+                  "caption": "Universal Studios Japan"
+                }
+              ],
               "details": "Главная цель — Hogsmeade и замок. Express Pass необязателен, если аттракционы не приоритетны. Заранее установить приложение USJ: для зоны Гарри Поттера иногда используется временной допуск.",
               "tags": ["themepark", "harrypotter"]
             }
@@ -211,6 +241,12 @@
               "durationMinutes": 90,
               "priority": "high",
               "estimatedCost": 3000,
+              "photos": [
+                {
+                  "url": "https://article-image.travel.navitime.jp/img/NTJtrv1084-en/NTJtrv1084-en_kuromon_market_0.jpg",
+                  "caption": "Kuromon Market"
+                }
+              ],
               "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kuromon+Market",
               "details": "Свежие морепродукты, такояки, местные деликатесы.",
               "tags": ["food"]
@@ -222,6 +258,16 @@
               "durationMinutes": 150,
               "priority": "high",
               "estimatedCost": 0,
+              "photos": [
+                {
+                  "url": "https://images.arigatotravel.com/wp-content/uploads/2024/11/17185155/ddtcover-fotor-20241004165527.jpg",
+                  "caption": "Den Den Town"
+                },
+                {
+                  "url": "https://res.cloudinary.com/dbm1qiew0/image/upload/blog-images/2024/09/23440453_s--2---1-.jpg",
+                  "caption": "Den Den Town"
+                }
+              ],
               "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Den+Den+Town+Osaka",
               "details": "Осакский аналог Акихабары: фигурки, манга, ретро-игры. Магазины Surugaya, Mandarake и небольшие комиссионные магазины.",
               "tags": ["anime", "shopping", "collectibles"]
@@ -233,7 +279,21 @@
               "durationMinutes": 120,
               "priority": "medium",
               "estimatedCost": 3000,
-              "details": "Пешком в район Синсэкай, к башне Цутэнкаку. Обед с кусикацу.",
+              "photos": [
+                {
+                  "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnUEQNYfCdaq68lJOEYxOqh_hjX8V2P3hmjoOqLn2_VDkElIAUrTYASW1b&s=10",
+                  "caption": "Синсэкай"
+                },
+                {
+                  "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9QgQiuvBQobiFPnXWMGAKDlzClcoDM_eBUtnnCgfh5XvtlGI2sV5uDM&s=10",
+                  "caption": "башня Цутэнкаку"
+                },
+                {
+                  "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw1NLaDmVGTd4-pl0S-U2mmgd3rXzZTwCgE6EFTwGFjKE8xO1zyBQ5POA&s=10",
+                  "caption": "обед с кусикацу"
+                }
+              ],
+              "details": "Пешком в район Синсэкай, к башне Цутэнкаку. Обед с кусикацу — это популярный японский сытный приём пищи, главным блюдом которого являются миниатюрные шашлычки из мяса, рыбы или овощей.",
               "tags": ["food", "viewpoint"]
             },
             {
@@ -243,6 +303,20 @@
               "durationMinutes": 150,
               "priority": "medium",
               "estimatedCost": 2000,
+              "photos": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Abeno_Harukas_Osaka_Japan01-r.jpg",
+                  "caption": "Abeno Harukas"
+                },
+                {
+                  "url": "https://www.japan-experience.com/sites/default/files/styles/scale_crop_480x250/public/legacy/japan_experience/1534384783295.jpg.webp?h=3f4d8c7e&itok=MMWkIbFe",
+                  "caption": "Abeno Harukas"
+                },
+                {
+                  "url": "https://static.gltjp.com/glt/data/article/21000/20388/20260210_185802_35c105ff_w1920.webp",
+                  "caption": "Abeno Harukas"
+                }
+              ],
               "details": "Опционально: смотровая площадка Abeno Harukas. Либо дополнительный шопинг в Намбе.",
               "tags": ["viewpoint", "shopping"]
             },
@@ -253,6 +327,12 @@
               "durationMinutes": 120,
               "priority": "medium",
               "estimatedCost": 4000,
+              "photos": [
+                {
+                  "url": "https://cdn.ruwiki.ru/commonswiki/files/thumb/6/6d/%D0%9C%D0%BE%D1%81%D1%82_%D0%AD%D0%B1%D0%B8%D1%81%D1%83%2C_%D0%94%D0%BE%D1%82%D0%BE%D0%BD%D0%B1%D0%BE%D1%80%D0%B8.jpg/600px-%D0%9C%D0%BE%D1%81%D1%82_%D0%AD%D0%B1%D0%B8%D1%81%D1%83%2C_%D0%94%D0%BE%D1%82%D0%BE%D0%BD%D0%B1%D0%BE%D1%80%D0%B8.jpg",
+                  "caption": "Дотонбори"
+                }
+              ],
               "details": "Ужин и вечерняя прогулка.",
               "tags": ["food"]
             }

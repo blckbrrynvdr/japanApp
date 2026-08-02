@@ -1,14 +1,15 @@
 ﻿import { CommonModule } from '@angular/common';
 import { Component, inject, Input, signal, TemplateRef, viewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TuiButton } from '@taiga-ui/core';
 import { TuiSwipe, tuiClamp, type TuiSwipeEvent } from '@taiga-ui/cdk';
-import { TuiPreview, TuiPreviewDialogService } from '@taiga-ui/kit/components/preview';
-import { ScheduleItem } from '../../../app/models';
+import { TuiPreview, TuiPreviewDialogService } from '@taiga-ui/kit';
+import { ScheduleItem } from '../../models';
 
 @Component({
   selector: 'app-schedule-item',
   standalone: true,
-  imports: [CommonModule, FormsModule, TuiPreview, TuiSwipe],
+  imports: [CommonModule, FormsModule, TuiButton, TuiPreview, TuiSwipe],
   templateUrl: './schedule-item.component.html',
   styleUrls: ['./schedule-item.component.scss']
 })
