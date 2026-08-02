@@ -16,14 +16,19 @@
   align-items: baseline;
 }
 
+.date-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
 .date {
   font-size: 1rem;
   font-weight: 700;
 }
 
 .weekday {
-  margin-top: 4px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.85);
 }
 

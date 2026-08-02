@@ -1,8 +1,10 @@
 <article class="day-card">
   <div class="day-header">
     <div>
-      <div class="date">{{ day.date }}</div>
-      <div class="weekday">{{ dayOfWeek }}</div>
+      <span class="date-row">
+        <span class="date">{{ formattedDate }}</span>
+        <span class="weekday">{{ dayOfWeek }}</span>
+      </span>
       <div class="city">{{ day.city }}</div>
     </div>
     <div class="locations">
@@ -12,11 +14,14 @@
   </div>
 
   <div class="day-variants" *ngIf="variants && variants.length > 0">
-    <label for="variant-select-{{day.date}}">Вариант дня:</label>
-    <select id="variant-select-{{day.date}}" (change)="selectVariant($any($event.target).value || null)">
-      <option value="">(По умолчанию)</option>
-      <option *ngFor="let v of variants" [value]="v.id" [selected]="v.id === selectedVariantId()">{{ v.label || v.id }}</option>
-    </select>
+    <tui-textfield>
+      <select tuiSelect
+        [(ngModel)]="selectedVariantId"
+        [items]="variantIds"
+        [labels]="variantLabels"
+        placeholder="Вариант дня"
+      ></select>
+    </tui-textfield>
   </div>
 
   <div class="day-body">

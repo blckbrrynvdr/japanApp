@@ -67,6 +67,7 @@
                     "description": "Заселение в APA Hotel Namba Ekihigashi",
                     "type": "hotel",
                     "durationMinutes": 30,
+                    "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22EGUSYc-mFQi7a1gJwfj3vK_ATIKdjIKlVKV3b6x5Q&s",
                     "priority": "must",
                     "estimatedCost": 0,
                     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=APA+Hotel+Namba+Ekihigashi",
