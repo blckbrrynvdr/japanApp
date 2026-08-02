@@ -543,7 +543,7 @@
             "date": "18-11-2026",
             "city": "Киото → Кавагутико",
             "startLocation": "APA Hotel Kyoto Ekikita",
-            "endLocation": "Kawaguchiko Hotel",
+            "endLocation": "Kasuitei Ohya",
             "schedule": [
                 {
                     "time": "07:00",
@@ -570,16 +570,15 @@
                     "tags": ["bus", "transfer"],
                     "status": "planned"
                 },
-                {
+{
                     "time": "13:00",
-                    "description": "Прибытие в Кавагутико, оставить вещи в отеле",
+                    "description": "Прибытие в Кавагутико, заселение в Kasuitei Ohya",
                     "type": "hotel",
                     "durationMinutes": 30,
                     "priority": "must",
                     "estimatedCost": 0,
-                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kawaguchiko+Hotel",
-                    "details": "Прибытие ~13:00–14:00. Оставить вещи в Kawaguchiko Hotel.",
-                    "status": "planned"
+                    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kasuitei+Ohya+Kawaguchiko",
+                    "details": "Прибытие ~13:00–14:00. Номер в японском стиле с персональным онсеном и видом на Фудзи. Завтрак и ужин включены в стоимость."
                 },
                 {
                     "time": "14:00",
@@ -610,7 +609,7 @@
         {
             "date": "19-11-2026",
             "city": "Кавагутико → Токио",
-            "startLocation": "Kawaguchiko Hotel",
+            "startLocation": "Kasuitei Ohya",
             "endLocation": "APA Hotel Asakusa Tawaramachi Ekimae",
             "schedule": [
                 {
@@ -1086,7 +1085,7 @@
         }
     ],
     "budget": {
-        "totalLimit": 400000,
+        "totalLimit": 450000,
         "items": [
             {
                 "category": "Авиабилеты",
@@ -1096,9 +1095,9 @@
             },
             {
                 "category": "Отели",
-                "planned": 118000,
-                "actual": 118000,
-                "comment": "Осака 3н, Киото 4н, Кавагутико 1н, Токио 6н"
+                "planned": 172810,
+                "actual": 172810,
+                "comment": "Осака 21 500, Киото 47 000, Кавагутико 38 000, Токио 66 310"
             },
             {
                 "category": "Питание",
@@ -1149,9 +1148,28 @@
             "status": "paid"
         },
         {
-            "description": "Отели (Осака, Киото, Кавагутико, Токио)",
-            "amount": 118000,
-            "status": "paid"
+            "description": "APA Hotel Namba Ekihigashi (Осака, 11–14 ноября)",
+            "amount": 21500,
+            "status": "paid",
+            "link": "https://www.tbank.ru/travel/hotels/new/hotels/1166774/"
+        },
+        {
+            "description": "APA Hotel Kyoto Ekikita (Киото, 14–18 ноября)",
+            "amount": 47000,
+            "status": "paid",
+            "link": "https://www.tbank.ru/travel/hotels/new/hotels/1167624/"
+        },
+        {
+            "description": "Kasuitei Ohya (Фудзикавагутико, 18–19 ноября)",
+            "amount": 38000,
+            "status": "paid",
+            "link": "https://www.tbank.ru/travel/hotels/new/hotels/1144438/"
+        },
+        {
+            "description": "APA Hotel Asakusa Tawaramachi Ekimae (Токио, 19–25 ноября)",
+            "amount": 66310,
+            "status": "paid",
+            "link": "https://www.tbank.ru/travel/hotels/new/hotels/1166775/"
         },
         {
             "description": "Синкансэн Kyoto → Mishima и автобус до Кавагутико",
@@ -1217,7 +1235,7 @@
     "checklist": [
         {
             "task": "Обновить даты отелей (Осака 11–14, Киото 14–18, Кавагутико 18–19, Токио 19–25)",
-            "done": false
+            "done": true
         },
         {
             "task": "Купить билеты в музей Гибли (нужна конкретная дата и время)",
@@ -1284,6 +1302,22 @@
         {
             "title": "USJ — Universal Studios Japan",
             "url": "https://www.usj.co.jp/web/en/us"
+        },
+        {
+            "title": "APA Hotel Namba Ekihigashi (Осака)",
+            "url": "https://www.tbank.ru/travel/hotels/new/hotels/1166774/"
+        },
+        {
+            "title": "APA Hotel Kyoto Ekikita (Киото)",
+            "url": "https://www.tbank.ru/travel/hotels/new/hotels/1167624/"
+        },
+        {
+            "title": "Kasuitei Ohya (Фудзикавагутико)",
+            "url": "https://www.tbank.ru/travel/hotels/new/hotels/1144438/"
+        },
+        {
+            "title": "APA Hotel Asakusa Tawaramachi Ekimae (Токио)",
+            "url": "https://www.tbank.ru/travel/hotels/new/hotels/1166775/"
         }
     ]
 }
