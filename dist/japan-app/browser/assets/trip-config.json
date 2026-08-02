@@ -67,7 +67,12 @@
                     "description": "Заселение в APA Hotel Namba Ekihigashi",
                     "type": "hotel",
                     "durationMinutes": 30,
-                    "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22EGUSYc-mFQi7a1gJwfj3vK_ATIKdjIKlVKV3b6x5Q&s",
+                    "photos": [
+  {
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22EGUSYc-mFQi7a1gJwfj3vK_ATIKdjIKlVKV3b6x5Q&s",
+    "caption": "APA Hotel Namba Ekihigashi"
+  }
+],
                     "priority": "must",
                     "estimatedCost": 0,
                     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=APA+Hotel+Namba+Ekihigashi",
@@ -81,7 +86,12 @@
                     "durationMinutes": 90,
                     "priority": "high",
                     "estimatedCost": 4000,
-                    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dotonbori_Namba_Osaka_JP.jpg/960px-Dotonbori_Namba_Osaka_JP.jpg",
+                    "photos": [
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dotonbori_Namba_Osaka_JP.jpg/960px-Dotonbori_Namba_Osaka_JP.jpg",
+    "caption": "Дотонбори ночью"
+  }
+],
                     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dotonbori",
                     "details": "Если останутся силы: вывеска Glico, поздний ужин — такояки, окономияки или рамен.",
                     "tags": ["food", "viewpoint"],
@@ -102,7 +112,12 @@
                     "durationMinutes": 120,
                     "priority": "high",
                     "estimatedCost": 700,
-                    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Osaka_castle_2009.jpg/960px-Osaka_castle_2009.jpg",
+                    "photos": [
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Osaka_castle_2009.jpg/960px-Osaka_castle_2009.jpg",
+    "caption": "Осакский замок"
+  }
+],
                     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Osaka+Castle",
                     "details": "Метро до Osaka Castle. Осмотр территории и замка. Внутрь заходить необязательно, если не интересна музейная экспозиция.",
                     "tags": ["history", "photo"],
@@ -341,7 +356,12 @@
                     "durationMinutes": 240,
                     "priority": "high",
                     "estimatedCost": 1000,
-                    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Arashiyama_Bamboo_Grove_2016.jpg/960px-Arashiyama_Bamboo_Grove_2016.jpg",
+                    "photos": [
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Arashiyama_Bamboo_Grove_2016.jpg/960px-Arashiyama_Bamboo_Grove_2016.jpg",
+    "caption": "Бамбуковая роща в Арасияме"
+  }
+],
                     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Arashiyama+Bamboo+Grove",
                     "details": "Ранний выезд JR Sagano Line до Saga-Arashiyama. До основной толпы: бамбуковая роща, Tenryu-ji, мост Togetsukyo. При хорошей погоде — прогулка вдоль реки.",
                     "weatherDependent": true,

@@ -18,12 +18,17 @@
   </div>
 
   <div class="schedule-actions">
-    <button *ngIf="item.photoUrl" class="action-button" type="button" (click)="openPhoto()">Фото</button>
     <button *ngIf="item.googleMapsUrl" class="action-button" type="button" (click)="openMap()">На карте</button>
   </div>
 
-  <div *ngIf="item.photoUrl" class="photo-block">
-    <img [src]="item.photoUrl" [alt]="item.description" (click)="openPhoto()" />
+  <div *ngIf="item.photos?.length" class="photo-thumbnails">
+    <img
+      *ngFor="let photo of item.photos; let i = index"
+      [src]="photo.url"
+      [alt]="photo.caption || item.description"
+      class="photo-thumb"
+      (click)="openPreview(i)"
+    />
   </div>
 
   <div *ngIf="openDetails()" class="details">
@@ -31,3 +36,23 @@
     <p *ngIf="item.personalNote" class="personal-note"><strong>Заметка:</strong> {{ item.personalNote }}</p>
   </div>
 </div>
+
+<ng-template
+  [tuiPreviewDialog]="previewOpen()"
+  (tuiPreviewDialogChange)="previewOpen.set($event)"
+>
+  <tui-preview [zoomable]="true">
+    <img
+      [src]="item.photos![previewIndex()].url"
+      [alt]="item.photos![previewIndex()].caption || item.description"
+    />
+    <tui-preview-title>
+      {{ item.photos![previewIndex()].caption || item.description }}
+    </tui-preview-title>
+    <tui-preview-pagination
+      [length]="item.photos!.length"
+      [index]="previewIndex()"
+      (indexChange)="previewIndex.set($event)"
+    />
+  </tui-preview>
+</ng-template>

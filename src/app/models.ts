@@ -21,10 +21,15 @@ export interface Day {
   variants?: Variant[];
 }
 
+export interface Photo {
+  url: string;
+  caption?: string;
+}
+
 export interface TripPoint {
   time: string;
   description: string;
-  photoUrl?: string;
+  photos?: Photo[];
   googleMapsUrl?: string;
   durationMinutes?: number;
   type?: 'museum' | 'shopping' | 'food' | 'transport' | 'viewpoint' | 'temple' | string;
